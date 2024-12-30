@@ -1,0 +1,704 @@
+fileFormatVersion: 2
+guid: f4279f1a2c6b5464f822d08d7c9a8b3d
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal_Grill_003_basecolor (New size 1)
+    second: {fileID: 2800000, guid: c06acbcb7f8142c4592d599377744bb2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal_Grill_003_metallic (New size 1)
+    second: {fileID: 2800000, guid: 085f3765ef292a24b97d09cf5116a0cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal_Grill_003_normal (New size 1)
+    second: {fileID: 2800000, guid: cc5e573f0e165ab4b8651c894348daee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal_Grill_003_opacity (New size 1)
+    second: {fileID: 2800000, guid: 7db7e24b00227dc4cbf952e094a7d8c3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal_Grill_003_roughness (New size 1)
+    second: {fileID: 2800000, guid: f0f85540d37d1fd4d8cc5384101353cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Untitled-5
+    second: {fileID: 2800000, guid: 59d582d5402a93b4db5f27638b784c5e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: buildingrrim_albedo (New size 2)
+    second: {fileID: 2800000, guid: 55b646d767f88b847bcf134b819cab95, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: buildingrrim_normal (New size 2)
+    second: {fileID: 2800000, guid: d57ae37d5ddb7b444ae79a14e7069e50, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: buildingrrim_roughness (New size 2)
+    second: {fileID: 2800000, guid: b59c7bbdc5ecf5041a20c97391df967a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: doors-garage_albedo (New size 2)
+    second: {fileID: 2800000, guid: 676c17992618dea4fabbae9b58af4db4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: doors-garage_normal (New size 2)
+    second: {fileID: 2800000, guid: c0b8d1288ca35b04e81f36706da2da52, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: doors-garage_roughness (New size 2)
+    second: {fileID: 2800000, guid: 41accbbce137b8944bf70a19d296d536, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: doorsbake_albedo (New size 2)
+    second: {fileID: 2800000, guid: 8650cdd87412d994bb484311a855a83a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: doorsbake_metallic (New size 2)
+    second: {fileID: 2800000, guid: eeac8f431697ab94aaf5c7d73e6940bc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: doorsbake_normal (New size 2)
+    second: {fileID: 2800000, guid: 8056fcbc39a034e45a4dadd30593497a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: doorsbake_roughness (New size 2)
+    second: {fileID: 2800000, guid: ee06048532ea276498bd9ca11e13da55, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fireladderfence_albedo
+    second: {fileID: 2800000, guid: 0a807a34f3143e64ead4c8665092f79d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fireladderfence_alpha
+    second: {fileID: 2800000, guid: 22f6b859db45da64584c0f6b74587b36, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fireladderfence_metalness
+    second: {fileID: 2800000, guid: bc1f557d39af44447b7820c798bfd21f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fireladderfence_normal
+    second: {fileID: 2800000, guid: ee853b09032c6bd4da009cd38b988901, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fireladderfence_roughness
+    second: {fileID: 2800000, guid: f35bb6bb6bbb0a645a1b4991823fcb39, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: front-door-store_albedo (New size 2)
+    second: {fileID: 2800000, guid: 448cef62a2e387542bdba25b9fb71dfa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: front-door-store_metalness (New size 2)
+    second: {fileID: 2800000, guid: acf03a90883469a4c86bd7937fe96953, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: front-door-store_normal (New size 2)
+    second: {fileID: 2800000, guid: 416f98a3c73c6db41a299d32dddc5d4a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: front-door-store_roughness (New size 2)
+    second: {fileID: 2800000, guid: 48f1fb3e5b347e44a8e018e822ff0033, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: frontdoor_albedo
+    second: {fileID: 2800000, guid: 59eb905a9c53fe148a101efd8d67ac74, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: frontdoor_metalness
+    second: {fileID: 2800000, guid: 9bd8b5f5ca7d6e943aef996682154091, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: frontdoor_normal
+    second: {fileID: 2800000, guid: cf6719c6e3dd06b40baeaf4ba0f6244f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: frontdoor_roughness
+    second: {fileID: 2800000, guid: 0d83f25cb27f27f4b89a603a00182ea9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: knotty-plywood_albedo (New size 1)
+    second: {fileID: 2800000, guid: d70bea4c5592482419f727c98643fc21, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: knotty-plywood_normal-ogl (New size 1)
+    second: {fileID: 2800000, guid: 717a7f7774a096249be1132240f0207c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: knotty-plywood_roughness (New size 1)
+    second: {fileID: 2800000, guid: b0144e5bf3636ac4da55161d951f76fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_0026_color_2k (New size 1)
+    second: {fileID: 2800000, guid: a0efd739d52c4b841a7d7bb6d2268162, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_0026_metallic_2k (New size 1)
+    second: {fileID: 2800000, guid: 7d353519753af4a4fa4b1cc245e152fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_0026_normal_opengl_2k (New size 1)
+    second: {fileID: 2800000, guid: c678bac84a41ff74482e558165612f46, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_0026_roughness_2k (New size 1)
+    second: {fileID: 2800000, guid: f9e1a74e1b032004f88a15f4d4dc5614, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metalfence_basecolor
+    second: {fileID: 2800000, guid: cbab664039f70e641ab3857b7a0b9ed4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metalfence_metallic
+    second: {fileID: 2800000, guid: 43442905203a31145ae06e666adc1cd3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metalfence_normal
+    second: {fileID: 2800000, guid: f219f5fd3c75df444aa82d9782ea52b4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metalfence_roughness
+    second: {fileID: 2800000, guid: 3b6eed8ee4b1fc045b2f2ad543fe5ca6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: patchy-meadow1_albedo
+    second: {fileID: 2800000, guid: 611f59ce8095a38409e86e2646f6ef19, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: patchy-meadow1_normal-ogl
+    second: {fileID: 2800000, guid: 14bf94321d991634d9fc29596d2d65f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: patchy-meadow1_roughness
+    second: {fileID: 2800000, guid: ca091a62d7e3a144da1363398797e6f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pitted-metal_albedo (New size 1)
+    second: {fileID: 2800000, guid: 2116c4654df596047b0d4482080530fc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pitted-metal_metallic (New size 1)
+    second: {fileID: 2800000, guid: c6df07ae1237cef498c7b663cd851a7a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pitted-metal_normal-ogl (New size 1)
+    second: {fileID: 2800000, guid: 01bc715e5bc605542b94f44d857d8243, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pitted-metal_roughness (New size 1)
+    second: {fileID: 2800000, guid: b31f4793d3eb6f147aa8be0107848512, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rooftop_0006_color_2k (New size 1)
+    second: {fileID: 2800000, guid: 247f14f784ff27c41bd9381fd623f364, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rooftop_0006_normal_opengl_2k (New size 1)
+    second: {fileID: 2800000, guid: 87c3f245c84ee334bb42049f4804041b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rooftop_0006_roughness_2k (New size 1)
+    second: {fileID: 2800000, guid: 3b3ab2c5288ca4247946964698a620d7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefront_1-2_albedo
+    second: {fileID: 2800000, guid: 11785ea5178db7e48936fbb0e2453f4f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefront_1-2_normal
+    second: {fileID: 2800000, guid: 7af36e104807abd41b1187706689017b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefront_1-2_roughness
+    second: {fileID: 2800000, guid: 7263e50547cafcd4ab32d9edc50e223d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefront_3-4_albedo
+    second: {fileID: 2800000, guid: 034bd5d761634434590a4f8720a76b6c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefront_3-4_normal
+    second: {fileID: 2800000, guid: fdecb4413ee5728499ae4cf412b87f45, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefront_3-4_roughness
+    second: {fileID: 2800000, guid: 592bd3b4062011a4d878cf06f715d4ad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefrontgate_albedo
+    second: {fileID: 2800000, guid: 80d151367338b3347a8e749533eee8b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefrontgate_alpha
+    second: {fileID: 2800000, guid: fc1cf947423cc58438b70c84fb7fbc1c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefrontgate_metalness
+    second: {fileID: 2800000, guid: e03377a76a27601459f2352101303511, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefrontgate_normal
+    second: {fileID: 2800000, guid: 93bc2928b5e72b84bb59b1cf334e0fc4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefrontgate_roughness
+    second: {fileID: 2800000, guid: 535d80992ae6e38418943d0f4bdeefcc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefrontsigns_BaseColor
+    second: {fileID: 2800000, guid: 8b8b04afe60e7b941af2eed3ac112028, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefrontsigns_roughness
+    second: {fileID: 2800000, guid: 5f19cb2773dd1bc428dfd4b6a9a1a53d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tf2fag1n_2K_Albedo (New size 2)
+    second: {fileID: 2800000, guid: 12fc576c858882d4bbce3bfcd750d332, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tf2fag1n_2K_Normal (New size 2)
+    second: {fileID: 2800000, guid: 55033a66cf642b041a2681437c2df4af, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tf2fag1n_2K_Roughness (New size 2)
+    second: {fileID: 2800000, guid: f75f4a113bf7f7e49a91420ab00ce7cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ukukfgmew_2K_Albedo
+    second: {fileID: 2800000, guid: bb385b98c2c1eb04995e127ad05d8510, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ukukfgmew_2K_Normal
+    second: {fileID: 2800000, guid: b5a102c46e0734d4aafd7df448d3cc5e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ukukfgmew_2K_Roughness
+    second: {fileID: 2800000, guid: 97afa1276ff9e2942a39f646ccd34da9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: vizcegj_2K_Albedo (New size 2)
+    second: {fileID: 2800000, guid: 8c82952167cea594a9e57c4ecb12dd2b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: vizcegj_2K_Normal (New size 2)
+    second: {fileID: 2800000, guid: e9ef92543e6e055488452cd749d7bc10, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: vizcegj_2K_Roughness (New size 2)
+    second: {fileID: 2800000, guid: 67cd9532f4de0dd49b4b58e86cf2a543, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: window1-2 (New size 2)
+    second: {fileID: 2800000, guid: 8d883e99d8b2d73459b9f111b1518e92, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: window1-2_normal (New size 2)
+    second: {fileID: 2800000, guid: e66d44015d0af8b4491ae833d658a33c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: window1-2_rough (New size 2)
+    second: {fileID: 2800000, guid: 50bba6b1c78a2eb4a8b15fcfc3ddc9c6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: window3-4 (New size 2)
+    second: {fileID: 2800000, guid: 38f90f981449feb4e818cfdcaabb7b27, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: window3-4_normal (New size 2)
+    second: {fileID: 2800000, guid: 394f60c342536f64493c8708154b7d80, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: window3-4_rough (New size 2)
+    second: {fileID: 2800000, guid: 9f9f44efd7ec4b543971e884d431ce94, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: window5
+    second: {fileID: 2800000, guid: c4167f6740d3e314b94c4764612c1c3f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: window5-1_normal (New size 2)
+    second: {fileID: 2800000, guid: d35cfc10f4671ef428aa855bcc0dbf30, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: window5_rough (New size 2)
+    second: {fileID: 2800000, guid: 8b3856b15a64b72459ae5aeb7605018d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: windows1-3_albedo
+    second: {fileID: 2800000, guid: 62ac1a821f0130b44af59b61c8143d4e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: windows1-3_albedo (New size 2)
+    second: {fileID: 2800000, guid: 56dc44f59e4b3b643876a6addb0c6f2e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: windows1-3_normal
+    second: {fileID: 2800000, guid: a48880b46c873ad4bb2be9d8ad8a5154, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: windows1-3_normal (New size 2)
+    second: {fileID: 2800000, guid: b9d9b3fa45e71cd448b1b60257815ce7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: windows1-3_roughness
+    second: {fileID: 2800000, guid: 3c034c73a754a6e4e9a17b4aa4701c46, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: windows1-3_roughness (New size 2)
+    second: {fileID: 2800000, guid: e785931aa5e446d4dac618b98c21f7e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: windows4-6_albedo (New size 2)
+    second: {fileID: 2800000, guid: 8856293a5af9294468b305239ebb9f44, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: windows4-6_normal (New size 2)
+    second: {fileID: 2800000, guid: 5e3f026c9a4d6c249b89254b8a0799e7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: windows4-6_roughness (New size 2)
+    second: {fileID: 2800000, guid: 64196035ad82d5546bf9c083c5b589ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: windows7-8_albedo (New size 2)
+    second: {fileID: 2800000, guid: 2a66eef76e68e36489e2b7595b5c0ffe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: windows7-8_normal (New size 2)
+    second: {fileID: 2800000, guid: 530ccbb884bbebe4ca7f6be359fc7d17, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wlrvaf3_2K_Albedo
+    second: {fileID: 2800000, guid: b18a7884590aab34daff411dffc577b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wlrvaf3_2K_Albedo (New size 2)
+    second: {fileID: 2800000, guid: 49e1b9c38ca83c445b94472fa028db65, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wlrvaf3_2K_Normal
+    second: {fileID: 2800000, guid: b2f97fd0f1c1a7c4287d38e92bf0d5e4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wlrvaf3_2K_Normal (New size 2)
+    second: {fileID: 2800000, guid: 2ff5958f3965cb244956f35b3a05da90, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wlrvaf3_2K_Roughness
+    second: {fileID: 2800000, guid: 3764b581225bcc145bd9ed6cf425fb8e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wlrvaf3_2K_Roughness (New size 2)
+    second: {fileID: 2800000, guid: fe9dece38cd0ab344a0f9df8232bd822, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wmknbhe_2K_Albedo
+    second: {fileID: 2800000, guid: 48de557f4844f064580aaed22d683afc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wmknbhe_2K_Normal
+    second: {fileID: 2800000, guid: ebb4f9033676c1b4f937a424a5b01abd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wmknbhe_2K_Roughness
+    second: {fileID: 2800000, guid: 1e72a3c6a51067b40ae14f7a704f8d67, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_0046_color_2k (New size 1)
+    second: {fileID: 2800000, guid: b00bff79769d5604585f7f835198db0a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_0046_normal_opengl_2k (New size 1)
+    second: {fileID: 2800000, guid: 68eae80c6dab32745b40208e6469702a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_0046_roughness_2k (New size 1)
+    second: {fileID: 2800000, guid: cbda8e0d7f7fdf140aa35a953a95abdb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_planks_diff_2k
+    second: {fileID: 2800000, guid: 942e283f8fee20a4e8eb6ce468710907, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_planks_diff_2k (New size 2)
+    second: {fileID: 2800000, guid: ae4fd577629bb8847852c40bde9c2f44, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_planks_nor_dx_2k
+    second: {fileID: 2800000, guid: b77aa0b21baf94949b045c8b58ade164, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_planks_normal_dx_2k (New size 2)
+    second: {fileID: 2800000, guid: a149fa8e6c432e441abf40c9db78f232, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_planks_rough_2k
+    second: {fileID: 2800000, guid: 5da29fab114383f498101dc55c76c022, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_planks_rough_2k (New size 2)
+    second: {fileID: 2800000, guid: a4c06f46373d3e94a9f166f8fc15bc53, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_table_worn_diff_4k (New size 1)
+    second: {fileID: 2800000, guid: 3ceeec7e297bf1e41b1aacac1a92e207, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_table_worn_nor_gl_4k (New size 1)
+    second: {fileID: 2800000, guid: 00459ab776df09146a84d3d55c2a420e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_table_worn_rough_4k (New size 1)
+    second: {fileID: 2800000, guid: 9bea7220ccb5f4643b2860128bd2bd3d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wornpaintedwoodsiding-albedo (New size 2)
+    second: {fileID: 2800000, guid: 075636e191ea4c14499c99b7b835d39a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wornpaintedwoodsiding-normal-ogl
+    second: {fileID: 2800000, guid: bd4e3e332e9af1a45a2c1d40547159d5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wornpaintedwoodsiding-roughness (New size 2)
+    second: {fileID: 2800000, guid: 919bf051367e09a4e96dc69c4f3c3597, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: xevjddns_2K_Albedo (New size 2)
+    second: {fileID: 2800000, guid: a038bbd65049294469d7af0bae698e5a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: xevjddns_2K_Normal (New size 2)
+    second: {fileID: 2800000, guid: 6b46c2760dccbf94ab8c7a489bd92c28, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: xevjddns_2K_Roughness (New size 2)
+    second: {fileID: 2800000, guid: 6bd4ef1d150f0db40ba51fbd18653385, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
