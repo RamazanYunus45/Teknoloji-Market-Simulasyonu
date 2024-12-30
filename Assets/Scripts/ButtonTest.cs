@@ -20,6 +20,7 @@ public class ButtonTest : MonoBehaviour
                 // Eðer UI bir butona çarptýysak
                 if (hit.collider.CompareTag("UIButton"))
                 {
+                    // Button
                     // UnityEngine.UI Button'a eriþim
                     var button = hit.collider.GetComponentInParent<UnityEngine.UI.Button>();
                     if (button != null)
