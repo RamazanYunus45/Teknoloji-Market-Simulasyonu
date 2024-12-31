@@ -51953,6 +51953,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 288459586222570960, guid: 93649a96dd6db5b4f915bf06f168474d, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4004352718954737746, guid: 93649a96dd6db5b4f915bf06f168474d, type: 3}
       propertyPath: m_Name
       value: Shelf_2
