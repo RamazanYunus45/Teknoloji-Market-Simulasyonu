@@ -127,27 +127,26 @@ public class PickUpSystem : MonoBehaviour
 
     void TryPlaceItemsOnShelf()
     {
-        // Kutudaki ilk ürünü al
         GameObject item = itemsInBox.Count > 0 ? itemsInBox[0] : null;
 
         if (item != null)
         {
             string itemTag = item.tag;
 
-            // Item tag'ine göre raycast yapýlacak layer mask oluþtur
             int layerToCheck = 0;
             LayerMask raycastMask = 0;
 
-            // Nesnenin tag'ine göre raycast yapýlacak layer'ý belirleyelim
             if (itemTag == "CableBox")
             {
                 layerToCheck = LayerMask.NameToLayer("cableboxLayer");
-                raycastMask = 1 << layerToCheck; // Sadece CableBox layer'ýna raycast gönder
             }
             else if (itemTag == "HeadPhone")
             {
                 layerToCheck = LayerMask.NameToLayer("headphoneLayer");
-                raycastMask = 1 << layerToCheck; // Sadece HeadPhone layer'ýna raycast gönder
+            }
+            else if (itemTag == "Speaker")
+            {
+                layerToCheck = LayerMask.NameToLayer("speakerLayer");
             }
             else
             {
@@ -155,46 +154,30 @@ public class PickUpSystem : MonoBehaviour
                 return;
             }
 
-            // Kamera merkezinden ray gönder
+            raycastMask = 1 << layerToCheck;
+
             Ray ray = playerCamera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
             if (Physics.Raycast(ray, out hit, raycastRange, raycastMask))
             {
                 GameObject hitObject = hit.collider.gameObject;
-                Debug.Log($"Raycast çarptý: {hitObject.name}, Pozisyon: {hit.point}, Layer: {LayerMask.LayerToName(hitObject.layer)}");
-
-                // Çarpýlan nesneye ait layer kontrol ediliyor
                 if (hitObject.layer == layerToCheck)
                 {
-                    Debug.Log("Hedef layer'a çarptý, diðer layer'ý kontrol ediyorum...");
-
-                    // Diðer layer'daki slotlarý kontrol et (baþka bir layer'da bir þey yerleþtirilmiþse, engelle)
                     if (CheckOtherLayerOccupied(hitObject, layerToCheck))
                     {
                         Debug.LogWarning("Diðer layer dolu. Ürün yerleþtirilemez.");
-                        return; // Diðer layer doluysa, iþlem sonlanýr
+                        return;
                     }
 
-                    Debug.Log("Diðer layer boþ, kendi layer'da slot aramaya devam ediyorum...");
-                   
-                    // Hedef layer'daki boþ slotlarý kontrol et
                     foreach (Transform slot in hitObject.transform)
                     {
-                        if (slot.childCount == 0) // Eðer slot boþsa
+                        if (slot.childCount == 0)
                         {
                             PlaceItemInSlot(item, slot);
-                            return; // Ürün baþarýyla yerleþtirildi, iþlem sonlandýrýlýr
-                        }
-                        else
-                        {
-                            Debug.Log($"Slot {slot.name} dolu, baþka bir boþ slot arýyorum.");
+                            return;
                         }
                     }
 
                     Debug.Log($"Rafta uygun boþ slot bulunamadý. Layer: {LayerMask.LayerToName(layerToCheck)}");
-                }
-                else
-                {
-                    Debug.Log("Raycast uygun layer'da bir slot bulamadý.");
                 }
             }
             else
@@ -210,41 +193,34 @@ public class PickUpSystem : MonoBehaviour
 
     bool CheckOtherLayerOccupied(GameObject hitObject, int currentLayer)
     {
-        // Diðer layer'ý belirle
-        int otherLayer = (currentLayer == LayerMask.NameToLayer("cableboxLayer"))
-            ? LayerMask.NameToLayer("headphoneLayer")
-            : LayerMask.NameToLayer("cableboxLayer");
+        int cableboxLayer = LayerMask.NameToLayer("cableboxLayer");
+        int headphoneLayer = LayerMask.NameToLayer("headphoneLayer");
+        int speakerLayer = LayerMask.NameToLayer("speakerLayer");
 
-        LayerMask otherLayerMask = 1 << otherLayer;
+        List<int> otherLayers = new List<int> { cableboxLayer, headphoneLayer, speakerLayer };
+        otherLayers.Remove(currentLayer); // Kendi layer'ýný listeden çýkar
 
-        Ray ray = playerCamera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-        if (Physics.Raycast(ray, out hit, raycastRange, otherLayerMask))
+        foreach (int otherLayer in otherLayers)
         {
-            Debug.Log($"Diðer layer ({LayerMask.LayerToName(otherLayer)})'ý kontrol ediyorum...");
+            LayerMask otherLayerMask = 1 << otherLayer;
 
-            GameObject hitObject2 = hit.collider.gameObject;
-
-
-            // HitObject içindeki tüm slotlarý kontrol et
-            foreach (Transform slot in hitObject2.transform)
+            Ray ray = playerCamera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+            if (Physics.Raycast(ray, out hit, raycastRange, otherLayerMask))
             {
-                if (slot.gameObject.layer == otherLayer) // Eðer slot diðer layer'daysa
+                GameObject hitObject2 = hit.collider.gameObject;
+                foreach (Transform slot in hitObject2.transform)
                 {
-                    Debug.Log($"Slot {slot.name}, diðer layer'da bulunuyor: {LayerMask.LayerToName(otherLayer)}");
-
-                    if (slot.childCount > 0) // Ve slot doluysa
+                    if (slot.gameObject.layer == otherLayer && slot.childCount > 0)
                     {
                         Debug.Log($"Diðer layer'daki slot dolu: {slot.name}, Layer: {LayerMask.LayerToName(slot.gameObject.layer)}");
-                        return true; // Diðer layer dolu, ürün yerleþtirilemez
+                        return true;
                     }
                 }
             }
-
-
-           
         }
-        Debug.Log("Diðer layer'da boþ slot bulundu.");
-        return false; // Diðer layer boþ
+
+        Debug.Log("Diðer layer'larda boþ slot bulundu.");
+        return false;
     }
 
     void PlaceItemInSlot(GameObject item, Transform slot)
