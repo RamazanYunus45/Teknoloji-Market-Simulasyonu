@@ -397,30 +397,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3252432947087219455}
-  - {fileID: 3525558566426877565}
-  - {fileID: 2543658892301350227}
-  - {fileID: 2334716225463269728}
-  - {fileID: 1831761200771089958}
-  - {fileID: 3047391061315483768}
-  - {fileID: 6510622808546441222}
-  - {fileID: 4325357593220729982}
-  - {fileID: 2626783750230099785}
-  - {fileID: 2300447995834426770}
-  - {fileID: 5905328359964474701}
-  - {fileID: 3121598895995525323}
-  - {fileID: 4250996205673827183}
-  - {fileID: 6748807223495823545}
-  - {fileID: 3134115014445453789}
-  - {fileID: 6627846281814087523}
-  - {fileID: 5904311538816830779}
-  - {fileID: 4355138579887344122}
-  - {fileID: 5304958597195332047}
-  - {fileID: 6817614643230868539}
-  - {fileID: 8380980019346185157}
-  - {fileID: 3997855633304848866}
-  - {fileID: 17594140901684184}
-  - {fileID: 1420435769535481133}
+  - {fileID: 2855865000716040809}
+  - {fileID: 5194605333376392581}
+  - {fileID: 756469069307946400}
+  - {fileID: 4690253489214515656}
+  - {fileID: 5531000332211634890}
+  - {fileID: 8045025576949488542}
+  - {fileID: 7395223246440856056}
+  - {fileID: 4412653730858251006}
+  - {fileID: 6495303799615927798}
+  - {fileID: 5715218572217493884}
+  - {fileID: 9096607904405990445}
+  - {fileID: 5311824205837148755}
   m_Father: {fileID: 2911866199628692889}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8600764665151329761
@@ -589,7 +577,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1001 &16239724348198598
+--- !u!1001 &63739505291597437
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -597,65 +585,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4956204602740919029}
     m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.4506607
+      value: 0.7400006
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: 0.12400013
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.11160946
+      value: -0.7910004
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9972037
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.074731246
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_Name
+      value: Gamepad (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_TagString
+      value: Gamepad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &2626783750230099785 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+--- !u!4 &5311824205837148755 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 16239724348198598}
+  m_CorrespondingSourceObject: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+  m_PrefabInstance: {fileID: 63739505291597437}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &300351528452600047
+--- !u!1001 &91166288290900395
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -663,65 +651,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4956204602740919029}
     m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7006607
+      value: -0.009999394
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: 0.12400013
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.11160946
+      value: 0.7089996
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9972037
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.074731246
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_Name
+      value: Gamepad (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_TagString
+      value: Gamepad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &2334716225463269728 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+--- !u!4 &5194605333376392581 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 300351528452600047}
+  m_CorrespondingSourceObject: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+  m_PrefabInstance: {fileID: 91166288290900395}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &504790594755706076
+--- !u!1001 &402823925041788644
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -729,65 +717,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4956204602740919029}
     m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.9506607
+      value: -0.009999394
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: 0.12400013
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.11160946
+      value: 0.20899957
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9972037
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.074731246
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_Name
+      value: Gamepad (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_TagString
+      value: Gamepad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &2543658892301350227 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+--- !u!4 &5531000332211634890 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 504790594755706076}
+  m_CorrespondingSourceObject: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+  m_PrefabInstance: {fileID: 402823925041788644}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &679888094737240944
+--- !u!1001 &433920357264727378
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -795,65 +783,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4956204602740919029}
     m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.9506607
+      value: -0.7599994
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: 0.12400013
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.2883911
+      value: -0.7910004
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9972037
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.074731246
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_Name
+      value: Gamepad (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_TagString
+      value: Gamepad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &3252432947087219455 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+--- !u!4 &5715218572217493884 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 679888094737240944}
+  m_CorrespondingSourceObject: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+  m_PrefabInstance: {fileID: 433920357264727378}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1010783309075411447
+--- !u!1001 &595093025110416870
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -861,65 +849,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4956204602740919029}
     m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7006607
+      value: -0.7599994
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: 0.12400013
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.2883911
+      value: 0.20899957
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9972037
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.074731246
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_Name
+      value: Gamepad (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_TagString
+      value: Gamepad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &3047391061315483768 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+--- !u!4 &4690253489214515656 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 1010783309075411447}
+  m_CorrespondingSourceObject: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+  m_PrefabInstance: {fileID: 595093025110416870}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1089767472668414276
+--- !u!1001 &1402560271342633432
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -927,65 +915,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4956204602740919029}
     m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.2006607
+      value: 0.7400006
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: 0.12400013
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.2883911
+      value: -0.29100043
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9972037
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.074731246
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_Name
+      value: Gamepad (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_TagString
+      value: Gamepad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &3121598895995525323 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+--- !u!4 &6495303799615927798 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 1089767472668414276}
+  m_CorrespondingSourceObject: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+  m_PrefabInstance: {fileID: 1402560271342633432}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1095246717432944722
+--- !u!1001 &2805950811793764272
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -993,65 +981,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4956204602740919029}
     m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.049339294
+      value: 0.7400006
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: 0.12400013
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.11160946
+      value: 0.20899957
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9972037
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.074731246
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_Name
+      value: Gamepad (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_TagString
+      value: Gamepad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &3134115014445453789 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+--- !u!4 &8045025576949488542 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 1095246717432944722}
+  m_CorrespondingSourceObject: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+  m_PrefabInstance: {fileID: 2805950811793764272}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1384496874300604525
+--- !u!1001 &3455401222507285974
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1059,65 +1047,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4956204602740919029}
     m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (22)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.7993393
+      value: -0.7599994
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: 0.12400013
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.11160946
+      value: -0.29100043
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9972037
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.074731246
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_Name
+      value: Gamepad (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_TagString
+      value: Gamepad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &3997855633304848866 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+--- !u!4 &7395223246440856056 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 1384496874300604525}
+  m_CorrespondingSourceObject: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+  m_PrefabInstance: {fileID: 3455401222507285974}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1486408605963393010
+--- !u!1001 &3992641144978610179
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1125,65 +1113,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4956204602740919029}
     m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.9506607
+      value: -0.009999394
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: 0.12400013
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.58839035
+      value: -0.7910004
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9972037
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.074731246
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_Name
+      value: Gamepad (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_TagString
+      value: Gamepad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &3525558566426877565 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+--- !u!4 &9096607904405990445 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 1486408605963393010}
+  m_CorrespondingSourceObject: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+  m_PrefabInstance: {fileID: 3992641144978610179}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1746564741577654389
+--- !u!1001 &4839845515623764366
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1191,65 +1179,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4956204602740919029}
     m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (18)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2993393
+      value: 0.7400006
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: 0.12400013
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.2883911
+      value: 0.7089996
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9972037
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.074731246
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_Name
+      value: Gamepad (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_TagString
+      value: Gamepad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &4355138579887344122 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+--- !u!4 &756469069307946400 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 1746564741577654389}
+  m_CorrespondingSourceObject: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+  m_PrefabInstance: {fileID: 4839845515623764366}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1750569597964666353
+--- !u!1001 &7995863308085775943
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1257,65 +1245,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4956204602740919029}
     m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.4506607
+      value: -0.76
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: 0.124
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.58839035
+      value: 0.709
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9972037
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.074731246
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_Name
+      value: Gamepad (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_TagString
+      value: Gamepad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &4325357593220729982 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+--- !u!4 &2855865000716040809 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 1750569597964666353}
+  m_CorrespondingSourceObject: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+  m_PrefabInstance: {fileID: 7995863308085775943}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2212136652040913632
+--- !u!1001 &8388504571713259216
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1323,853 +1311,61 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4956204602740919029}
     m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.049339294
+      value: -0.009999394
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: 0.12400013
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.2883911
+      value: -0.29100043
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9972037
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.074731246
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
+      value: -0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
+    - target: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_Name
+      value: Gamepad (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390104916420114925, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+      propertyPath: m_TagString
+      value: Gamepad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &4250996205673827183 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+--- !u!4 &4412653730858251006 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 2212136652040913632}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &2626449403190131287
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4956204602740919029}
-    m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (23)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.7993393
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.58839035
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9972037
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.074731246
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &17594140901684184 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 2626449403190131287}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4034067309828394146
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4956204602740919029}
-    m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (24)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.7993393
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.2883911
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9972037
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.074731246
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &1420435769535481133 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 4034067309828394146}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4296804948102212637
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4956204602740919029}
-    m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.2006607
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.11160946
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9972037
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.074731246
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &2300447995834426770 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 4296804948102212637}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4406276412855570345
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4956204602740919029}
-    m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.7006607
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.58839035
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9972037
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.074731246
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &1831761200771089958 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 4406276412855570345}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &5765378256760672842
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4956204602740919029}
-    m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (21)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.5493393
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.11160946
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9972037
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.074731246
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &8380980019346185157 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 5765378256760672842}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &7913804942623043648
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4956204602740919029}
-    m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.5493393
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.2883911
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9972037
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.074731246
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &5304958597195332047 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 7913804942623043648}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &8484166082542126260
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4956204602740919029}
-    m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.2993393
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.58839035
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9972037
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.074731246
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &5904311538816830779 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 8484166082542126260}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &8484347172878644418
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4956204602740919029}
-    m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.2006607
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.58839035
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9972037
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.074731246
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &5905328359964474701 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 8484347172878644418}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &8783444788204706102
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4956204602740919029}
-    m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.049339294
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.58839035
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9972037
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.074731246
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &6748807223495823545 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 8783444788204706102}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &8849727696125201844
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4956204602740919029}
-    m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (20)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.5493393
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.58839035
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9972037
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.074731246
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &6817614643230868539 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 8849727696125201844}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &9085982446226960777
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4956204602740919029}
-    m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.4506607
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.2883911
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9972037
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.074731246
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &6510622808546441222 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 9085982446226960777}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &9202915648291839724
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 4956204602740919029}
-    m_Modifications:
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_Name
-      value: Powerbank (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1939573464173029797, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_TagString
-      value: Powerbank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.2993393
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.11160946
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9972037
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00000003764339
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.074731246
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000028210256
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
---- !u!4 &6627846281814087523 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2615892189523052943, guid: 6ec4264136020044080eaf0889b81ddb, type: 3}
-  m_PrefabInstance: {fileID: 9202915648291839724}
+  m_CorrespondingSourceObject: {fileID: 5284148733778211886, guid: 177f2784e4848e142bad95ce35f0a254, type: 3}
+  m_PrefabInstance: {fileID: 8388504571713259216}
   m_PrefabAsset: {fileID: 0}

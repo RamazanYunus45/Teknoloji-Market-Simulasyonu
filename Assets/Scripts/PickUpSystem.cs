@@ -148,6 +148,18 @@ public class PickUpSystem : MonoBehaviour
             {
                 layerToCheck = LayerMask.NameToLayer("speakerLayer");
             }
+            else if (itemTag == "MobilPhone")
+            {
+                layerToCheck = LayerMask.NameToLayer("mobilphoneLayer");
+            }
+            else if (itemTag == "Gamepad")
+            {
+                layerToCheck = LayerMask.NameToLayer("gamepadLayer");
+            }
+            else if (itemTag == "CoffeMachine")
+            {
+                layerToCheck = LayerMask.NameToLayer("coffemachineLayer");
+            }
             else
             {
                 Debug.LogWarning($"Bilinmeyen ürün tag'ý: {itemTag}");
@@ -164,7 +176,7 @@ public class PickUpSystem : MonoBehaviour
                 {
                     if (CheckOtherLayerOccupied(hitObject, layerToCheck))
                     {
-                        Debug.LogWarning("Diðer layer dolu. Ürün yerleþtirilemez.");
+                        Debug.Log("Diðer layer dolu. Ürün yerleþtirilemez.");
                         return;
                     }
 
@@ -196,8 +208,11 @@ public class PickUpSystem : MonoBehaviour
         int cableboxLayer = LayerMask.NameToLayer("cableboxLayer");
         int headphoneLayer = LayerMask.NameToLayer("headphoneLayer");
         int speakerLayer = LayerMask.NameToLayer("speakerLayer");
+        int mobilephoneLayer = LayerMask.NameToLayer("mobilephoneLayer");
+        int gamepadLayer = LayerMask.NameToLayer("gamepadLayer");
+        int coffemachineLayer = LayerMask.NameToLayer("coffemachineLayer");
 
-        List<int> otherLayers = new List<int> { cableboxLayer, headphoneLayer, speakerLayer };
+        List<int> otherLayers = new List<int> { cableboxLayer, headphoneLayer, speakerLayer, mobilephoneLayer, gamepadLayer, coffemachineLayer };
         otherLayers.Remove(currentLayer); // Kendi layer'ýný listeden çýkar
 
         foreach (int otherLayer in otherLayers)

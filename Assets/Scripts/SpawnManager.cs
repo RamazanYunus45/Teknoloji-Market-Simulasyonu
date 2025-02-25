@@ -31,7 +31,7 @@ public class SpawnManager : MonoBehaviour
             { "Usb Kablo", prefab2 },
             { "Kahve Makinasý", prefab3 },
             { "Kulaklýk", prefab4 },
-            { "PowerBank", prefab5 },
+            { "Gamepad", prefab5 },
             { "Hoparlör", prefab6 }
         };
 
