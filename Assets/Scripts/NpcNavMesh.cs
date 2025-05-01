@@ -4,200 +4,263 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using System.Linq;
+using System;
 
 public class NpcVavMesh : MonoBehaviour
 {
-    public string[] availableProductTags; // Maðazadaki ürünlerin tag'larý
-    public Transform target1; // Ýlk hedef raf
-    public Transform target2; // Ýkinci hedef raf
-    public Transform target3; // Kasa hedefi
-    public Transform target4; // Çýkýþ hedefi
-    public Transform hand; // NPC'nin elindeki hand GameObject'i
 
-    private string selectedProduct1;
-    private string selectedProduct2;
+    /* Npc bir raf collider ý ile çakýþtýysa iþleme baþlýyor , ürün almaya baþlýyor raftan tek tek ürünleri topluyor */
+
+
+    private Dictionary<string, int> npcUrunBilgileri = new Dictionary<string, int>();
+    public Transform Hand;
     private NavMeshAgent agent;
-    private Animator animator; // Animator referansý
-    public TextMeshProUGUI textMesh;
+    private bool urunSecildi = false;
 
-    public Button exitButton;
+    private NPCHareket npcHareket;
 
-    void Start()
+    private Animator animator;
+
+    public List<Transform> kasaNoktalari; // 6 konum
+    public List<Transform> beklemeNoktalari; // 2 konum
+
+    private static HashSet<int> doluKasaIndexleri = new HashSet<int>(); // hangi kasalar dolu
+
+    private void Start()
     {
-        agent = GetComponent<NavMeshAgent>(); // NavMeshAgent referansý
-        animator = GetComponent<Animator>(); // Animator referansý
-
-        if (textMesh == null)
+        agent = GetComponent<NavMeshAgent>();
+        if (agent == null)
         {
-            Debug.LogError("TextMeshPro bileþeni atanmamýþ! Lütfen inspector üzerinden atayýn.");
-            return;
+            Debug.LogError("NavMeshAgent bileþeni bulunamadý!");
         }
 
-        if (hand == null)
+        npcHareket = GetComponent<NPCHareket>();
+        if (npcHareket == null)
         {
-            Debug.LogError("Hand GameObject'i atanmamýþ! Lütfen inspector üzerinden atayýn.");
-            return;
+            Debug.LogError("NPCHareket bileþeni bulunamadý!");
         }
 
-        SelectRandomProducts();
-        DisplaySelectedProducts();
-        GoToRandomShelf();
-
-
+        animator = GetComponent<Animator>(); // Animator bileþenini al
     }
 
-    // Rastgele 2 ürün seç
-    public void SelectRandomProducts()
+    private void OnTriggerEnter(Collider other)
     {
-        selectedProduct1 = availableProductTags[Random.Range(0, availableProductTags.Length)];
-        selectedProduct2 = availableProductTags[Random.Range(0, availableProductTags.Length)];
-    }
-
-    // Seçilen ürünleri TextMeshPro'da göster
-    public void DisplaySelectedProducts()
-    {
-        textMesh.text = $"Ürünler:\n{selectedProduct1}\n{selectedProduct2}";
-    }
-
-    // Rastgele bir rafýn önüne git
-    public void GoToRandomShelf()
-    {
-        Transform selectedTarget = Random.Range(0, 2) == 0 ? target1 : target2;
-        agent.SetDestination(selectedTarget.position);
-        StartCoroutine(CheckForProductsAtShelf(selectedTarget));
-    }
-
-    // Raflarda ürün kontrolü yap
-    public IEnumerator CheckForProductsAtShelf(Transform shelf)
-    {
-        // NPC hedefe ulaþtýðýnda kontrol yapýlýr
-        while (Vector3.Distance(transform.position, shelf.position) > 1f)
+        if (other.CompareTag("Shelf") && !urunSecildi)
         {
-            yield return null;
-        }
+            // Karþýlaþýlan rafýn adý
+            string carpanRafAdi = other.name;
 
-        // Raflara geldiðinde hýzýný sýfýrlýyoruz
-        agent.speed = 0f;  // Hýz sýfýrlanýr
-
-        // Animasyon hýzýný 0 yapýyoruz
-        if (animator != null)
-        {
-            animator.speed = 0f;  // Animasyon hýzýný sýfýrla
-            animator.SetTrigger("Idle"); // Idle animasyonunu tetikle
-        }
-
-        // Animasyonu durdur
-        agent.isStopped = true;
-
-        Collider[] colliders = Physics.OverlapSphere(shelf.position, 2f); // Rafýn çevresindeki collider'larý kontrol et
-        foreach (var col in colliders)
-        {
-            Debug.Log("Bulunan nesne: " + col.name);  // Tüm bulunan nesnelerin ismini logluyoruz
-            if (col.CompareTag("Shelf"))  // Eðer nesne Shelf tag'ine sahipse
+            // Hedef rafla ayný mý
+            if (carpanRafAdi != npcHareket.hedefRafÝsmi)
             {
-                foreach (Transform child in col.transform)
-                {
-                    foreach (Transform grandChild in child)
-                    {
-                        foreach (Transform greatGrandChild in grandChild)
-                        {
-                            // Eðer child'ýn child'ý ve onun child'ý belirtilen ürünlerden biriyle eþleþiyorsa
-                            if (greatGrandChild.CompareTag(selectedProduct1) || greatGrandChild.CompareTag(selectedProduct2))
-                            {
-                                // Ürün bulundu, "hand" GameObject'inin child'ý olarak taþý
-                                greatGrandChild.SetParent(hand); // "hand" nesnesinin child'ý yap
-                                greatGrandChild.localPosition = Vector3.zero; // Elin içinde sýfýr pozisyona yerleþtir
+                Debug.Log($"Bu raf hedef deðil: {carpanRafAdi} != {npcHareket.hedefRafÝsmi}");
+                return;
+            }
 
-                                Debug.Log($"Ürün bulundu ve elin içine eklendi: {greatGrandChild.tag}");
+            Raf rafScript = other.GetComponent<Raf>();
+            if (rafScript != null)
+            {
+                rafScript.UpdateUrunBilgileri();
+                rafScript.RastgeleUrunSec();
+                npcUrunBilgileri = new Dictionary<string, int>(rafScript.secilenUrunler);
+                urunSecildi = true;
+                Debug.Log("Raf bilgileri NPC'ye aktarýldý.");
 
-                                // 3 saniye bekle
-                                yield return new WaitForSeconds(3f);
-
-                                // Hýz tekrar eski deðerine döndürülebilir
-                                agent.speed = 3.5f; // Hýzý eski haline döndür (örnek hýz deðeri)
-
-                                // Animasyon hýzýný eski haline getir
-                                if (animator != null)
-                                {
-                                    animator.speed = 1f; // Animasyon hýzýný tekrar 1 yap
-                                }
-
-                                // Kasa hedefine git
-                                GoToCheckout();
-                                yield break; // Ürün bulunduysa iþlem sonlanýr
-                            }
-                        }
-                    }
-                }
+                StartCoroutine(UrunAlmaRutini(rafScript));
             }
         }
-        agent.isStopped = false;
-        agent.speed = 3.5f;
-        animator.speed = 1f;
-        // Eðer ürün bulunamadýysa çýkýþa git
-        GoToExit();
     }
 
-    // Kasa hedefine git
-    public void GoToCheckout()
+    private IEnumerator UrunAlmaRutini(Raf rafScript)
     {
-        agent.isStopped = false;
-        agent.SetDestination(target3.position);
-        Debug.Log("Kasa önüne gidildi.");
-        StartCoroutine(StopAnimationWhenArrived(target3)); // Kasa hedefine varýnca animasyonu durdurmak için coroutine baþlatýyoruz
+        foreach (var urun in npcUrunBilgileri.ToList())
+        {
+            string urunAdi = urun.Key;
+            int gerekliAdet = urun.Value;
+            int kalanAdet = gerekliAdet;
+
+            Debug.Log($"Ürün: {urunAdi}, Gerekli Adet: {gerekliAdet}");
+
+            int alinanAdet = 0;
+
+            // Ýlk raftan ürünleri al
+            if (rafScript.urunBilgileri.ContainsKey(urunAdi) && rafScript.urunBilgileri[urunAdi] > 0)
+            {
+                int alinan = 0;
+                yield return StartCoroutine(UrunleriRaftanTopla(rafScript, urunAdi, kalanAdet, (alindi) => alinan = alindi));
+                alinanAdet = alinan;
+                kalanAdet -= alinanAdet;
+                Debug.Log($"{alinanAdet} adet {urunAdi} ilk raftan alýndý. Kalan: {kalanAdet}");
+            }
+
+            if (kalanAdet <= 0)
+            {
+                continue;
+            }
+
+            List<Transform> digerRaflar = rafScript.YeterliUrunBul(rafScript, urunAdi, kalanAdet);
+            if (digerRaflar.Count > 0)
+            {
+                foreach (Transform hedefKonum in digerRaflar)
+                {
+                    agent.isStopped = false;                   
+                    agent.updateRotation = true;
+                    animator.SetFloat("Speed", 1f);
+                    agent.speed = 3.5f;
+                    agent.SetDestination(hedefKonum.position);
+
+                    yield return new WaitUntil(() => !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance);
+                    yield return new WaitForSeconds(0.5f);
+
+                    animator.SetFloat("Speed", 0f);
+                    agent.speed = 0f;
+                    agent.updateRotation = false;
+                    Quaternion hedefRotation = hedefKonum.rotation;
+                    transform.rotation = Quaternion.Euler(0, hedefRotation.eulerAngles.y, 0); // Sadece Y eksenini alýyoruz
+
+                    Raf yeniRafScript = hedefKonum.GetComponentInParent<Raf>();
+                    if (yeniRafScript != null)
+                    {
+                        int alinan = 0;
+                        yield return StartCoroutine(UrunleriRaftanTopla(yeniRafScript, urunAdi, kalanAdet, (alindi) => alinan = alindi));
+                        kalanAdet -= alinan;
+                        Debug.Log($"{alinan} adet {urunAdi} yeni raftan alýndý. Kalan: {kalanAdet}");
+                    }
+
+                    if (kalanAdet <= 0)
+                        break;
+                }
+            }
+
+            if (kalanAdet > 0)
+            {
+                Debug.LogWarning($"{urunAdi} ürünü için toplamda hala {kalanAdet} adet eksik!");
+            }
+        }
     }
 
-    // Çýkýþa git
-    public void GoToExit()
+    // Raftaki ürünleri NPC eline alýr ve raftaki stoðu düþürür
+    private IEnumerator UrunleriRaftanTopla(Raf rafScript, string urunAdi, int adetIhtiyac, Action<int> callback)
     {
+        int alinanAdet = 0;
 
-        agent.isStopped = false;
-        agent.speed = 3.5f;
-        animator.speed = 1f;
-        agent.SetDestination(target4.position);
-        Debug.Log("Çýkýþa gidildi.");
-        StartCoroutine(StopAnimationWhenArrived(target4)); // Çýkýþ hedefine varýnca animasyonu durdurmak için coroutine baþlatýyoruz
+        foreach (Transform child in rafScript.transform)
+        {
+            foreach (Transform grandchild in child)
+            {
+                foreach (Transform greatGrandchild in grandchild)
+                {
+                    if (greatGrandchild.CompareTag(urunAdi) && alinanAdet < adetIhtiyac)
+                    {
+                        animator.SetTrigger("UrunAl");
+                        yield return new WaitForSeconds(3f);
+                        greatGrandchild.SetParent(Hand);
+                        animator.SetFloat("Speed", 0f);
+                        greatGrandchild.localPosition = Vector3.zero + new Vector3(0, 0.2f * alinanAdet, 0);
+                        alinanAdet++;
+                        Debug.Log($"{urunAdi} alýndý ({alinanAdet}/{adetIhtiyac})");
+
+                        yield return null; // isteðe baðlý: her bir ürün için frame beklenebilir
+                        
+                    }
+
+                    if (alinanAdet >= adetIhtiyac)
+                        break;
+                }
+                if (alinanAdet >= adetIhtiyac)
+                    break;
+            }
+            if (alinanAdet >= adetIhtiyac)
+                break;
+        }
+
+        if (rafScript.urunBilgileri.ContainsKey(urunAdi))
+        {
+            rafScript.urunBilgileri[urunAdi] -= alinanAdet;
+        }
+       
+        callback?.Invoke(alinanAdet);
+
+        StartCoroutine(KasayaGitRutini());
     }
 
-    // Hedefe varýldýðýnda animasyon hýzýný sýfýrla
-    public IEnumerator StopAnimationWhenArrived(Transform target)
+    private IEnumerator KasayaGitRutini()
     {
-        // Hedefe yaklaþýrken kontrol et
-        while (Vector3.Distance(transform.position, target.position) > 1f)
+        // Boþ kasa var mý kontrol et
+        int bosKasaIndex = -1;
+        for (int i = 0; i < kasaNoktalari.Count; i++)
         {
-            yield return null;
+            if (!doluKasaIndexleri.Contains(i))
+            {
+                bosKasaIndex = i;
+                break;
+            }
         }
 
-        // Hedefe varýldýðýnda animasyon hýzýný sýfýrla
-        if (animator != null)
+        if (bosKasaIndex != -1)
         {
-            animator.speed = 0f;  // Animasyon hýzýný sýfýrla
-            Debug.Log("Hedefe varýldý, animasyon hýzý sýfýrlandý.");
-        }
+            // Boþ kasa bulundu
+            doluKasaIndexleri.Add(bosKasaIndex);
+            Transform hedefKasa = kasaNoktalari[bosKasaIndex];
 
-        // Hedefe varýldýðýnda agent'ý durdur
-        agent.isStopped = true;
+            agent.isStopped = false;
+            agent.updateRotation = true;
+            animator.SetFloat("Speed", 1f);
+            agent.speed = 3.5f;
+            agent.SetDestination(hedefKasa.position);
 
-        // Hedefe varýldýðýnda çýkýþ veya kasa iþlemi tamamlandýðýnda devam etmesini saðla
-        if (target == target3)
-        {
-            // Kasa hedefine varýldýysa, ödeme iþlemini baþlatabiliriz veya baþka bir iþlem yapýlabilir.
-            Debug.Log("Kasa iþlemi tamamlandý.");
+            yield return new WaitUntil(() => !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance);
+            animator.SetFloat("Speed", 0f);
+            agent.speed = 0f;
+            agent.updateRotation = false;
+
+            Debug.Log($"NPC kasaya ulaþtý: {hedefKasa.name}");
+
+            // Burada ödeme animasyonu vb. koyabilirsin
+            yield return new WaitForSeconds(5f); // örnek: 5 saniye ödeme süresi
+
+            // Ödeme bitince kasayý boþalt
+            doluKasaIndexleri.Remove(bosKasaIndex);
+            Debug.Log($"{hedefKasa.name} artýk boþ.");
+
+            // NPC sahneden çýkabilir veya baþka iþlem yapabilir (isteðe baðlý)
         }
-        else if (target == target4)
+        else
         {
-            // Çýkýþa varýldýðýnda çýkýþ iþlemi yapýlabilir.
-            Debug.Log("Çýkýþa varýldý.");
+            Debug.LogWarning("Tüm kasalar dolu! NPC bekleme noktasýna gidiyor.");
+            yield return StartCoroutine(BeklemeNoktalariArasiGidisGelis());
         }
     }
 
-    public void OnExitButtonPressed()
+    private IEnumerator BeklemeNoktalariArasiGidisGelis()
     {
-        // Eðer NPC kasa noktasýna ulaþtýysa, çýkýþa gitmesini saðla
-        if (Vector3.Distance(transform.position, target3.position) <= 1f)
+        int hedefIndex = 0;
+        while (true)
         {
-            Debug.Log("Kasa hedefine ulaþýldý, çýkýþa gidiliyor...");
-            GoToExit();  // Çýkýþ noktasýna git
+            Transform hedefNokta = beklemeNoktalari[hedefIndex];
+
+            agent.isStopped = false;
+            agent.updateRotation = true;
+            animator.SetFloat("Speed", 1f);
+            agent.speed = 2f;
+            agent.SetDestination(hedefNokta.position);
+
+            yield return new WaitUntil(() => !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance);
+            animator.SetFloat("Speed", 0f);
+            yield return new WaitForSeconds(1f);
+
+            hedefIndex = (hedefIndex + 1) % beklemeNoktalari.Count;
+
+            // Her döngüde kasalar boþaldý mý kontrol edelim
+            if (doluKasaIndexleri.Count < kasaNoktalari.Count)
+            {
+                Debug.Log("Kasada yer açýldý, tekrar deniyorum.");
+                yield return StartCoroutine(KasayaGitRutini());
+                break;
+            }
         }
     }
 }
+
+

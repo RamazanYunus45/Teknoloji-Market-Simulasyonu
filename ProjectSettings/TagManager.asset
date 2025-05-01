@@ -16,6 +16,8 @@ TagManager:
   - Shelf
   - UIButton
   - Gamepad
+  - ShelfPoint
+  - NPC
   layers:
   - Default
   - TransparentFX

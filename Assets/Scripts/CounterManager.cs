@@ -18,7 +18,7 @@ public class CounterManager : MonoBehaviour
     private TextMeshProUGUI kargoFiyat;
     private TextMeshProUGUI Toplam_Text;
     private TextMeshProUGUI MevcutBakiyeText;
-    private TextMeshProUGUI ToplamText;
+    //private TextMeshProUGUI ToplamText;
     private TextMeshProUGUI KalanText;
 
 
@@ -30,7 +30,7 @@ public class CounterManager : MonoBehaviour
         kargoFiyat = GameObject.Find("Kargo_Text").GetComponent<TextMeshProUGUI>();
         Toplam_Text = GameObject.Find("Toplam_Text").GetComponent<TextMeshProUGUI>();
         MevcutBakiyeText = GameObject.Find("MevcutBakiye_Text").GetComponent<TextMeshProUGUI>();
-        ToplamText = GameObject.Find("Toplam_Text").GetComponent<TextMeshProUGUI>();
+       // ToplamText = GameObject.Find("Toplam_Text").GetComponent<TextMeshProUGUI>();
         KalanText = GameObject.Find("Kalan_Text").GetComponent<TextMeshProUGUI>();
     }
 
