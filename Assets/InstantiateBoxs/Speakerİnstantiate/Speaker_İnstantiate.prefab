@@ -178,7 +178,6 @@ GameObject:
   - component: {fileID: 5581032888613857478}
   - component: {fileID: 4792494551303864940}
   - component: {fileID: 3598668843642567266}
-  - component: {fileID: -3246436050684607241}
   m_Layer: 0
   m_Name: "Speaker_\u0130nstantiate"
   m_TagString: Pickup
@@ -271,20 +270,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.3366852, y: 1.7703747, z: 2.2652512}
   m_Center: {x: -0.005104065, y: -0.0076527, z: -0.035712242}
---- !u!114 &-3246436050684607241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4916936831510389891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcdcd89b18bbd33418ffc4707adc4569, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxContentsParent: {fileID: 6825835877614923873}
-  itemsInBox: []
 --- !u!1 &5019325568174073257
 GameObject:
   m_ObjectHideFlags: 0

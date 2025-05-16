@@ -13,6 +13,7 @@ public class NPC : MonoBehaviour
     public float spawnSuresi = 60f; // Spawn süresi
 
     private RafSecici rafKontrol; // Raflarý kontrol eden script
+    private OpenClose Sign;
 
     void Start()
     {
@@ -24,6 +25,8 @@ public class NPC : MonoBehaviour
             return;
         }
 
+        Sign = FindObjectOfType<OpenClose>();
+
         Debug.Log("NPCSpawner çalýþýyor! Spawn iþlemi baþlayacak...");
         StartCoroutine(NPCSpawnRutini());
     }
@@ -33,7 +36,16 @@ public class NPC : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(spawnSuresi);
-            NPCSpawnEt();
+
+            //  Sadece SpawnetmeDurumu true ise çalýþ
+            if (Sign != null && Sign.SpawnetmeDurumu)
+            {
+                NPCSpawnEt();
+            }
+            else
+            {
+                Debug.Log("Spawn iþlemi devre dýþý.");
+            }
         }
     }
 

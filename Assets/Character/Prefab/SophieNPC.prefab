@@ -2330,15 +2330,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hand: {fileID: 8927215383477110174}
   kasaNoktalari:
-  - {fileID: 3354001501709799564, guid: 45609d913f48c4d4784a8f839c8da33a, type: 3}
-  - {fileID: 6616268407572580282, guid: 944b48b63d128464bb95eaf46a90585e, type: 3}
-  - {fileID: 2034440707749050205, guid: bba391bba9588e94c8c1bdb80decce5a, type: 3}
-  - {fileID: 1754138774673548469, guid: 043eb7ed2521c234aa7da1de931a84ee, type: 3}
-  - {fileID: 8603604286445609239, guid: 74bd435b8e049864aae366901677797b, type: 3}
-  - {fileID: 7107295980917430395, guid: a5361a488882f1c4fbefecee5fc07c52, type: 3}
+  - {fileID: 3847761008412301058, guid: 15460b43b16849544bb517f654678eff, type: 3}
+  - {fileID: 1540127595053870851, guid: 5aa78a3d07039a943b60ea8157914c6d, type: 3}
+  - {fileID: 6166062854094275269, guid: 2ccdb4b5285ed0c4aa806f5b4e079e47, type: 3}
+  - {fileID: 7422751677168616201, guid: 59c4c9915397c984cbb6ae0fef6ad5f5, type: 3}
+  - {fileID: 8431647697178125975, guid: aea79d5e76996614c9dca07e969b645c, type: 3}
+  - {fileID: 6482020001734453579, guid: 7d630f1e42feb2d4b89f345deda97e1d, type: 3}
   beklemeNoktalari:
-  - {fileID: 7794211716603118679, guid: 47811fbb431344d41b9f31aae0396f55, type: 3}
-  - {fileID: 2787881284661812387, guid: 194d031e3a9702241bfa867b2074faa2, type: 3}
+  - {fileID: 1545195027092170592, guid: 8953ef9f0a96539478741acbc9540df5, type: 3}
+  - {fileID: 2669930381326544057, guid: a7cfc6d07d35ae94eb983836ff60d62c, type: 3}
+  urunKoymaNoktalari:
+  - {fileID: 8237813658744336385, guid: fcf6ce5c82e3ac54c9172e4fd12348fc, type: 3}
+  - {fileID: 8651686993970232547, guid: 0c3e7dc67cdcf3d4bbbe0d8ea7ca8763, type: 3}
+  - {fileID: 418099099588478493, guid: bf6d84133bbc7744d8f64faf8a5b00d0, type: 3}
+  - {fileID: 5500431439515959766, guid: 7defb19d346b09746a98492f03179d1e, type: 3}
+  - {fileID: 2898075561324098646, guid: ea5ce6f156dc3fe48b2f0f62357473af, type: 3}
+  - {fileID: 5178492103983772746, guid: 8be96f5dc11bb4741bf494d4c598455d, type: 3}
+  - {fileID: 4610649715275043833, guid: c480df45190b3af40a9a64752c3ab882, type: 3}
+  - {fileID: 7275081793649561058, guid: 8c3be36147ff2114ab66bd927a118aad, type: 3}
+  - {fileID: 7876176899440869548, guid: 5bcc10eb89e39cb4c8c6ee50e3ce5cd9, type: 3}
+  Dolu: 0
 --- !u!95 &7796230317132759462
 Animator:
   serializedVersion: 5

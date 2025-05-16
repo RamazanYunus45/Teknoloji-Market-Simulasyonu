@@ -344,7 +344,6 @@ GameObject:
   - component: {fileID: 9062961626645877555}
   - component: {fileID: 4416362966324274396}
   - component: {fileID: 5074025197222602170}
-  - component: {fileID: -3321488710553011909}
   m_Layer: 0
   m_Name: "CoffeMachine_\u0130nstantiate"
   m_TagString: Pickup
@@ -437,20 +436,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.3576202, y: 1.7577422, z: 2.2603455}
   m_Center: {x: -0.015785217, y: -0.0063146353, z: -0.033166885}
---- !u!114 &-3321488710553011909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8686327684396383419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcdcd89b18bbd33418ffc4707adc4569, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxContentsParent: {fileID: 5094549393382788539}
-  itemsInBox: []
 --- !u!1 &8789350798977067343
 GameObject:
   m_ObjectHideFlags: 0

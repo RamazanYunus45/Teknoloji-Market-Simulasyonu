@@ -199,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Fiyat :      $'
+  m_text: 'Fiyat :        $'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x10
+  m_text: x12
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -641,8 +641,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.4, y: 18.3}
-  m_SizeDelta: {x: 25.52, y: 19.66}
+  m_AnchoredPosition: {x: 16.795, y: 18.3}
+  m_SizeDelta: {x: 33.604, y: 19.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7313925458673195813
 CanvasRenderer:
@@ -672,7 +672,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 20
+  m_text: 275
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -1031,7 +1031,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Fiyat :       $'
+  m_text: 'Fiyat :         $'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -2657,8 +2657,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.9, y: 17.9}
-  m_SizeDelta: {x: 22.4, y: 19.659}
+  m_AnchoredPosition: {x: 19.023003, y: 17.9}
+  m_SizeDelta: {x: 38.044, y: 19.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1166032524642900668
 CanvasRenderer:
@@ -2688,7 +2688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 60
+  m_text: 200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -2822,7 +2822,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x10
+  m_text: x12
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -3513,7 +3513,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x10
+  m_text: x4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -3781,7 +3781,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x10
+  m_text: x14
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -4747,12 +4747,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cartContainer: {fileID: 8477687561335825339}
-  prefab1: {fileID: 617657795264973147, guid: 5fe434a74fe600f49ba133ae1655fe77, type: 3}
-  prefab2: {fileID: 5487845397159757381, guid: 6a89138d2520f4446b0b002ba9d99df0, type: 3}
-  prefab3: {fileID: 3491955243871961482, guid: dee9f052299ae14479f4c8b3bee4e3c8, type: 3}
-  prefab4: {fileID: 7193548443101390493, guid: b9c67994d6109f34786446b2ca3309db, type: 3}
-  prefab5: {fileID: 7335936460910055902, guid: b240d3319ab65164496c8f546ba468f7, type: 3}
-  prefab6: {fileID: 7680155015543082033, guid: ccb43fa1beba07e4680727970a2eb699, type: 3}
+  prefab1: {fileID: 3485469470477351447, guid: 5fe434a74fe600f49ba133ae1655fe77, type: 3}
+  prefab2: {fileID: 3961954659181437814, guid: 37045b5ad0c039049bad1cc1134f9bf3, type: 3}
+  prefab3: {fileID: 8686327684396383419, guid: dee9f052299ae14479f4c8b3bee4e3c8, type: 3}
+  prefab4: {fileID: 7737879226511728651, guid: b9c67994d6109f34786446b2ca3309db, type: 3}
+  prefab5: {fileID: 3865698282236362638, guid: b240d3319ab65164496c8f546ba468f7, type: 3}
+  prefab6: {fileID: 4916936831510389891, guid: ccb43fa1beba07e4680727970a2eb699, type: 3}
 --- !u!1 &3157982814621494215
 GameObject:
   m_ObjectHideFlags: 0
@@ -6486,7 +6486,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 20
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -7166,6 +7166,18 @@ MonoBehaviour:
       - m_Target: {fileID: 704668776526441651}
         m_TargetAssemblyTypeName: SpawnManager, Assembly-CSharp
         m_MethodName: SpawnCartItems
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6666520358919135920}
+        m_TargetAssemblyTypeName: SepetManager, Assembly-CSharp
+        m_MethodName: Bakiye
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8012,8 +8024,8 @@ GameObject:
   - component: {fileID: 4440437749733770008}
   - component: {fileID: 941461211470143897}
   - component: {fileID: 1618677581194569338}
-  - component: {fileID: 1191835401393288218}
   - component: {fileID: 74319454614561035}
+  - component: {fileID: 2492147704854116818}
   m_Layer: 5
   m_Name: "Shopping_\u0130tem (4)"
   m_TagString: Untagged
@@ -8097,23 +8109,6 @@ MonoBehaviour:
   targetText: {fileID: 2878375715421222918}
   fiyatText: {fileID: 781162370366390770}
   toplamText: {fileID: 0}
---- !u!114 &1191835401393288218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4221638187322579233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a2c8541e249eee47a5276b5a2768b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalPriceText: {fileID: 2921105367383064276}
-  targetText: {fileID: 2878375715421222918}
-  itemPrice: 20
-  itemQuantity: 0
-  totalPrice: 0
 --- !u!114 &74319454614561035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8127,7 +8122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: {fileID: 3948067580668034477}
-  productRowPrefab: {fileID: 8480965641274368533, guid: 2b94a19755fb77c45887b1b3c9bfb414, type: 3}
+  productRowPrefab: {fileID: 3596768536856742460, guid: 2b94a19755fb77c45887b1b3c9bfb414, type: 3}
   adText: {fileID: 838689301873288002}
   fiyatText: {fileID: 781162370366390770}
   adetText: {fileID: 2878375715421222918}
@@ -8138,6 +8133,20 @@ MonoBehaviour:
   BakiyeText: {fileID: 0}
   KalanText: {fileID: 6139482437708563527}
   MevcutBakiyeText: {fileID: 539368693144236529}
+--- !u!114 &2492147704854116818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4221638187322579233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a56e50e593645274381738b5085c6e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNameText: {fileID: 838689301873288002}
+  itemCountText: {fileID: 2878375715421222918}
 --- !u!1 &4253215732722618047
 GameObject:
   m_ObjectHideFlags: 0
@@ -8846,8 +8855,8 @@ GameObject:
   - component: {fileID: 5891335384434852023}
   - component: {fileID: 671097295815348888}
   - component: {fileID: 4198339536455547934}
-  - component: {fileID: 755100946901136174}
   - component: {fileID: 6666520358919135920}
+  - component: {fileID: 5210303928024452166}
   m_Layer: 5
   m_Name: "Shopping_\u0130tem"
   m_TagString: Untagged
@@ -8931,23 +8940,6 @@ MonoBehaviour:
   targetText: {fileID: 7649589948569934411}
   fiyatText: {fileID: 6580092503063107254}
   toplamText: {fileID: 0}
---- !u!114 &755100946901136174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4609583731635511113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a2c8541e249eee47a5276b5a2768b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalPriceText: {fileID: 2921105367383064276}
-  targetText: {fileID: 7649589948569934411}
-  itemPrice: 100
-  itemQuantity: 0
-  totalPrice: 0
 --- !u!114 &6666520358919135920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8961,7 +8953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: {fileID: 3948067580668034477}
-  productRowPrefab: {fileID: 8480965641274368533, guid: 2b94a19755fb77c45887b1b3c9bfb414, type: 3}
+  productRowPrefab: {fileID: 3596768536856742460, guid: 2b94a19755fb77c45887b1b3c9bfb414, type: 3}
   adText: {fileID: 7473424951844876259}
   fiyatText: {fileID: 6580092503063107254}
   adetText: {fileID: 7649589948569934411}
@@ -8972,6 +8964,20 @@ MonoBehaviour:
   BakiyeText: {fileID: 0}
   KalanText: {fileID: 6139482437708563527}
   MevcutBakiyeText: {fileID: 539368693144236529}
+--- !u!114 &5210303928024452166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4609583731635511113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a56e50e593645274381738b5085c6e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNameText: {fileID: 7473424951844876259}
+  itemCountText: {fileID: 7649589948569934411}
 --- !u!1 &4614348597589791439
 GameObject:
   m_ObjectHideFlags: 0
@@ -9189,7 +9195,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x10
+  m_text: x16
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -10576,7 +10582,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PowerBank
+  m_text: Gamepad
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10844,7 +10850,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Fiyat :      $'
+  m_text: 'Fiyat :        $'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -10947,8 +10953,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.5, y: 17.2}
-  m_SizeDelta: {x: 32.12, y: 19.07}
+  m_AnchoredPosition: {x: 20.15, y: 17.2}
+  m_SizeDelta: {x: 53.16, y: 19.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1347470925609403930
 CanvasRenderer:
@@ -10978,7 +10984,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 1200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -11112,7 +11118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x10
+  m_text: x12
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -11987,8 +11993,8 @@ GameObject:
   - component: {fileID: 7011225410067736075}
   - component: {fileID: 1975617509759961606}
   - component: {fileID: 8034564099801945471}
-  - component: {fileID: 1767528591852073999}
   - component: {fileID: 6688048662503438554}
+  - component: {fileID: 5859134775929235482}
   m_Layer: 5
   m_Name: "Shopping_\u0130tem (2)"
   m_TagString: Untagged
@@ -12072,23 +12078,6 @@ MonoBehaviour:
   targetText: {fileID: 4097401857889117535}
   fiyatText: {fileID: 5659483911106835052}
   toplamText: {fileID: 0}
---- !u!114 &1767528591852073999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6565661351460730824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a2c8541e249eee47a5276b5a2768b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalPriceText: {fileID: 2921105367383064276}
-  targetText: {fileID: 4097401857889117535}
-  itemPrice: 60
-  itemQuantity: 0
-  totalPrice: 0
 --- !u!114 &6688048662503438554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12102,7 +12091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: {fileID: 3948067580668034477}
-  productRowPrefab: {fileID: 8480965641274368533, guid: 2b94a19755fb77c45887b1b3c9bfb414, type: 3}
+  productRowPrefab: {fileID: 3596768536856742460, guid: 2b94a19755fb77c45887b1b3c9bfb414, type: 3}
   adText: {fileID: 4405432328125703110}
   fiyatText: {fileID: 5659483911106835052}
   adetText: {fileID: 4097401857889117535}
@@ -12113,6 +12102,20 @@ MonoBehaviour:
   BakiyeText: {fileID: 0}
   KalanText: {fileID: 6139482437708563527}
   MevcutBakiyeText: {fileID: 539368693144236529}
+--- !u!114 &5859134775929235482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6565661351460730824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a56e50e593645274381738b5085c6e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNameText: {fileID: 4405432328125703110}
+  itemCountText: {fileID: 4097401857889117535}
 --- !u!1 &6808062503200586166
 GameObject:
   m_ObjectHideFlags: 0
@@ -12507,8 +12510,8 @@ GameObject:
   - component: {fileID: 2004139608894407343}
   - component: {fileID: 9184170527643307021}
   - component: {fileID: 8832324908607519026}
-  - component: {fileID: 3755950770818746681}
   - component: {fileID: 8050710504268185952}
+  - component: {fileID: 8149263970488123661}
   m_Layer: 5
   m_Name: "Shopping_\u0130tem (3)"
   m_TagString: Untagged
@@ -12592,23 +12595,6 @@ MonoBehaviour:
   targetText: {fileID: 8903814855202148022}
   fiyatText: {fileID: 2665539901094977870}
   toplamText: {fileID: 0}
---- !u!114 &3755950770818746681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7015935487731752203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a2c8541e249eee47a5276b5a2768b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalPriceText: {fileID: 2921105367383064276}
-  targetText: {fileID: 8903814855202148022}
-  itemPrice: 30
-  itemQuantity: 0
-  totalPrice: 0
 --- !u!114 &8050710504268185952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12622,7 +12608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: {fileID: 3948067580668034477}
-  productRowPrefab: {fileID: 8480965641274368533, guid: 2b94a19755fb77c45887b1b3c9bfb414, type: 3}
+  productRowPrefab: {fileID: 3596768536856742460, guid: 2b94a19755fb77c45887b1b3c9bfb414, type: 3}
   adText: {fileID: 5475924382459130970}
   fiyatText: {fileID: 2665539901094977870}
   adetText: {fileID: 8903814855202148022}
@@ -12633,6 +12619,20 @@ MonoBehaviour:
   BakiyeText: {fileID: 0}
   KalanText: {fileID: 6139482437708563527}
   MevcutBakiyeText: {fileID: 539368693144236529}
+--- !u!114 &8149263970488123661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7015935487731752203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a56e50e593645274381738b5085c6e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNameText: {fileID: 5475924382459130970}
+  itemCountText: {fileID: 8903814855202148022}
 --- !u!1 &7030755583638095996
 GameObject:
   m_ObjectHideFlags: 0
@@ -12950,8 +12950,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.5, y: 18.3}
-  m_SizeDelta: {x: 25.13, y: 19.66}
+  m_AnchoredPosition: {x: 18.969, y: 18.3}
+  m_SizeDelta: {x: 37.942, y: 19.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3366236831338267930
 CanvasRenderer:
@@ -12981,7 +12981,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 30
+  m_text: 400
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -13084,8 +13084,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18.3, y: 18.8}
-  m_SizeDelta: {x: 24.94, y: 19.66}
+  m_AnchoredPosition: {x: 17.006, y: 18.8}
+  m_SizeDelta: {x: 40.539, y: 19.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4879061580555415864
 CanvasRenderer:
@@ -13115,7 +13115,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 50
+  m_text: 150
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -13596,8 +13596,8 @@ GameObject:
   - component: {fileID: 6831987549439665555}
   - component: {fileID: 7750238342617122728}
   - component: {fileID: 1586257814533323005}
-  - component: {fileID: 7881692074736098349}
   - component: {fileID: 6703943216969309786}
+  - component: {fileID: 182498010019948620}
   m_Layer: 5
   m_Name: "Shopping_\u0130tem (5)"
   m_TagString: Untagged
@@ -13681,23 +13681,6 @@ MonoBehaviour:
   targetText: {fileID: 5424581794112582765}
   fiyatText: {fileID: 3533025449400999778}
   toplamText: {fileID: 0}
---- !u!114 &7881692074736098349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7560659292232563895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a2c8541e249eee47a5276b5a2768b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalPriceText: {fileID: 2921105367383064276}
-  targetText: {fileID: 5424581794112582765}
-  itemPrice: 50
-  itemQuantity: 0
-  totalPrice: 0
 --- !u!114 &6703943216969309786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13711,7 +13694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: {fileID: 3948067580668034477}
-  productRowPrefab: {fileID: 8480965641274368533, guid: 2b94a19755fb77c45887b1b3c9bfb414, type: 3}
+  productRowPrefab: {fileID: 3596768536856742460, guid: 2b94a19755fb77c45887b1b3c9bfb414, type: 3}
   adText: {fileID: 5693178049609384069}
   fiyatText: {fileID: 3533025449400999778}
   adetText: {fileID: 5424581794112582765}
@@ -13722,6 +13705,20 @@ MonoBehaviour:
   BakiyeText: {fileID: 0}
   KalanText: {fileID: 6139482437708563527}
   MevcutBakiyeText: {fileID: 539368693144236529}
+--- !u!114 &182498010019948620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560659292232563895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a56e50e593645274381738b5085c6e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNameText: {fileID: 5693178049609384069}
+  itemCountText: {fileID: 5424581794112582765}
 --- !u!1 &7598711641269819834
 GameObject:
   m_ObjectHideFlags: 0
@@ -14064,7 +14061,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Fiyat :      $'
+  m_text: 'Fiyat :        $'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -15152,7 +15149,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Fiyat :       $'
+  m_text: 'Fiyat :          $'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -15798,8 +15795,8 @@ GameObject:
   - component: {fileID: 42435256213007083}
   - component: {fileID: 8076044088952102307}
   - component: {fileID: 6834056206730434794}
-  - component: {fileID: 1134865485570527604}
   - component: {fileID: 1366066563344440113}
+  - component: {fileID: 4729415059552474727}
   m_Layer: 5
   m_Name: "Shopping_\u0130tem (1)"
   m_TagString: Untagged
@@ -15883,23 +15880,6 @@ MonoBehaviour:
   targetText: {fileID: 707657447521701195}
   fiyatText: {fileID: 5982681526053039921}
   toplamText: {fileID: 0}
---- !u!114 &1134865485570527604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8636247681531817328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a2c8541e249eee47a5276b5a2768b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalPriceText: {fileID: 2921105367383064276}
-  targetText: {fileID: 707657447521701195}
-  itemPrice: 10
-  itemQuantity: 0
-  totalPrice: 0
 --- !u!114 &1366066563344440113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15913,7 +15893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: {fileID: 3948067580668034477}
-  productRowPrefab: {fileID: 8480965641274368533, guid: 2b94a19755fb77c45887b1b3c9bfb414, type: 3}
+  productRowPrefab: {fileID: 3596768536856742460, guid: 2b94a19755fb77c45887b1b3c9bfb414, type: 3}
   adText: {fileID: 6620935231414319262}
   fiyatText: {fileID: 5982681526053039921}
   adetText: {fileID: 707657447521701195}
@@ -15924,6 +15904,20 @@ MonoBehaviour:
   BakiyeText: {fileID: 0}
   KalanText: {fileID: 6139482437708563527}
   MevcutBakiyeText: {fileID: 539368693144236529}
+--- !u!114 &4729415059552474727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8636247681531817328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a56e50e593645274381738b5085c6e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNameText: {fileID: 6620935231414319262}
+  itemCountText: {fileID: 707657447521701195}
 --- !u!1 &8683100536548968749
 GameObject:
   m_ObjectHideFlags: 0

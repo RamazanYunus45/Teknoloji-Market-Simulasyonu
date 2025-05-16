@@ -3,29 +3,37 @@
 [ExecuteInEditMode]
 public class Zoom : MonoBehaviour
 {
-    Camera camera;
+    private Camera zoomCamera; // camera yerine zoomCamera dedik
+
     public float defaultFOV = 60;
     public float maxZoomFOV = 15;
     [Range(0, 1)]
     public float currentZoom;
     public float sensitivity = 1;
 
-
     void Awake()
     {
-        // Get the camera on this gameObject and the defaultZoom.
-        camera = GetComponent<Camera>();
-        if (camera)
+        // Kamerayı bu gameObject'ten al
+        zoomCamera = GetComponent<Camera>();
+
+        // Null değilse FOV değerini al
+        if (zoomCamera != null)
         {
-            defaultFOV = camera.fieldOfView;
+            defaultFOV = zoomCamera.fieldOfView;
+        }
+        else
+        {
+            Debug.LogError("Zoom.cs üzerindeki kamera bulunamadı! Bu script, bir Camera nesnesine eklenmeli.");
         }
     }
+    
 
     void Update()
     {
-        // Update the currentZoom and the camera's fieldOfView.
-        currentZoom += Input.mouseScrollDelta.y * sensitivity * .05f;
+        if (zoomCamera == null) return;
+
+        currentZoom += Input.mouseScrollDelta.y * sensitivity * 0.05f;
         currentZoom = Mathf.Clamp01(currentZoom);
-        camera.fieldOfView = Mathf.Lerp(defaultFOV, maxZoomFOV, currentZoom);
+        zoomCamera.fieldOfView = Mathf.Lerp(defaultFOV, maxZoomFOV, currentZoom);
     }
 }

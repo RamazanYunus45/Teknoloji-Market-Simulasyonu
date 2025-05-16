@@ -17,22 +17,12 @@ public class CounterManager : MonoBehaviour
     private TextMeshProUGUI sepetFiyatText;
     private TextMeshProUGUI kargoFiyat;
     private TextMeshProUGUI Toplam_Text;
-    private TextMeshProUGUI MevcutBakiyeText;
-    //private TextMeshProUGUI ToplamText;
+    private TextMeshProUGUI MevcutBakiyeText;  
     private TextMeshProUGUI KalanText;
+   
 
 
-
-    void Start()
-    {
-        sepetFiyatText = GameObject.Find("SepetFiyat_Text").GetComponent<TextMeshProUGUI>();
-        siparisFiyat = GameObject.Find("Siparis_Text").GetComponent<TextMeshProUGUI>();
-        kargoFiyat = GameObject.Find("Kargo_Text").GetComponent<TextMeshProUGUI>();
-        Toplam_Text = GameObject.Find("Toplam_Text").GetComponent<TextMeshProUGUI>();
-        MevcutBakiyeText = GameObject.Find("MevcutBakiye_Text").GetComponent<TextMeshProUGUI>();
-       // ToplamText = GameObject.Find("Toplam_Text").GetComponent<TextMeshProUGUI>();
-        KalanText = GameObject.Find("Kalan_Text").GetComponent<TextMeshProUGUI>();
-    }
+    
 
     public void Increase()
     {
@@ -71,7 +61,14 @@ public class CounterManager : MonoBehaviour
 
     public void SepetTotalNegative()
     {
-       
+        sepetFiyatText = GameObject.Find("SepetFiyat_Text").GetComponent<TextMeshProUGUI>();
+        siparisFiyat = GameObject.Find("Siparis_Text").GetComponent<TextMeshProUGUI>();
+        kargoFiyat = GameObject.Find("Kargo_Text").GetComponent<TextMeshProUGUI>();
+        Toplam_Text = GameObject.Find("Toplam_Text").GetComponent<TextMeshProUGUI>();
+        KalanText = GameObject.Find("Kalan_Text").GetComponent<TextMeshProUGUI>();
+        MevcutBakiyeText = GameObject.Find("MevcutBakiye_Text").GetComponent<TextMeshProUGUI>();
+
+
         int adet = int.Parse(targetText.text);
         
         if (adet > minValue) {
@@ -90,6 +87,14 @@ public class CounterManager : MonoBehaviour
     }
     public void SepetTotalPlus()
     {
+        sepetFiyatText = GameObject.Find("SepetFiyat_Text").GetComponent<TextMeshProUGUI>();
+        siparisFiyat = GameObject.Find("Siparis_Text").GetComponent<TextMeshProUGUI>();
+        kargoFiyat = GameObject.Find("Kargo_Text").GetComponent<TextMeshProUGUI>();
+        Toplam_Text = GameObject.Find("Toplam_Text").GetComponent<TextMeshProUGUI>();
+        KalanText = GameObject.Find("Kalan_Text").GetComponent<TextMeshProUGUI>();
+        MevcutBakiyeText = GameObject.Find("MevcutBakiye_Text").GetComponent<TextMeshProUGUI>();
+
+
         int adet = int.Parse(targetText.text);
 
         if (adet < maxValue) {
@@ -109,18 +114,28 @@ public class CounterManager : MonoBehaviour
 
     public void RemoveItem(GameObject item)
     {
+        sepetFiyatText = GameObject.Find("SepetFiyat_Text").GetComponent<TextMeshProUGUI>();
+        siparisFiyat = GameObject.Find("Siparis_Text").GetComponent<TextMeshProUGUI>();
+        kargoFiyat = GameObject.Find("Kargo_Text").GetComponent<TextMeshProUGUI>();
+        Toplam_Text = GameObject.Find("Toplam_Text").GetComponent<TextMeshProUGUI>();
+        KalanText = GameObject.Find("Kalan_Text").GetComponent<TextMeshProUGUI>();
+
         // Ýlgili GameObject'i yok et
         Destroy(item);
         float SepetTotal = float.Parse(sepetFiyatText.text);
         float toplamFiyat = float.Parse(toplamText.text);
         float KalanFiyat = float.Parse(KalanText.text);
+        float kargo = float.Parse(kargoFiyat.text);
+        float siparisText = float.Parse(siparisFiyat.text);
+        float fiyat = float.Parse(fiyatText.text);
+      
+
+
         sepetFiyatText.text = (SepetTotal - toplamFiyat).ToString();
         siparisFiyat.text = (SepetTotal - toplamFiyat).ToString();
         KalanText.text = (KalanFiyat + toplamFiyat).ToString();
+        Toplam_Text.text = ((SepetTotal - toplamFiyat) + kargo ).ToString();
     }
 
-    void Update()
-    {
-
-    }
+   
 }

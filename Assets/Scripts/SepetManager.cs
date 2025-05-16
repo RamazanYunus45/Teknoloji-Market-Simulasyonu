@@ -22,6 +22,8 @@ public class SepetManager : MonoBehaviour
     public TextMeshProUGUI KalanText;
     public TextMeshProUGUI MevcutBakiyeText;
 
+    private TextMeshProUGUI siparisFiyatText;
+
     public void AddToCart()
     {
 
@@ -133,5 +135,26 @@ public class SepetManager : MonoBehaviour
             }
         }
     }
+    public void Bakiye ()
+    {
+        siparisFiyatText = GameObject.Find("Siparis_Text").GetComponent<TextMeshProUGUI>();
+
+        if (float.Parse(KalanText.text) >= 0 && float.Parse(siparisFiyatText.text) >0)
+        {
+            float Bakiye = float.Parse(BakiyeText.text);
+
+            float ToplamFiyat = float.Parse(ToplamText.text);
+
+            float newBakiye = Bakiye - ToplamFiyat;
+
+            BakiyeText.text = newBakiye.ToString();
+
+            MevcutBakiyeText.text = newBakiye.ToString();
+            KalanText.text = (newBakiye - ToplamFiyat).ToString();
+        }
+      
+        
+    }
+
 }
 

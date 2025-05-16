@@ -468,7 +468,6 @@ GameObject:
   - component: {fileID: 4256676510179767466}
   - component: {fileID: 4154929903159461135}
   - component: {fileID: 2582592172440983573}
-  - component: {fileID: 8679394873797772709}
   m_Layer: 0
   m_Name: "Headphone_\u0130nstantiate"
   m_TagString: Pickup
@@ -561,20 +560,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.354248, y: 1.7700605, z: 2.2447128}
   m_Center: {x: -0.004425049, y: -0.013276815, z: -0.031824112}
---- !u!114 &8679394873797772709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7737879226511728651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcdcd89b18bbd33418ffc4707adc4569, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxContentsParent: {fileID: 6417694613306623513}
-  itemsInBox: []
 --- !u!1001 &565512450393029197
 PrefabInstance:
   m_ObjectHideFlags: 0

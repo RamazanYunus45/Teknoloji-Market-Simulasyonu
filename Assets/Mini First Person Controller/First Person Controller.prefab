@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4464631255176552}
   - component: {fileID: 33023507119538386}
   - component: {fileID: 23087463268523072}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Capsule Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -437,6 +437,7 @@ MonoBehaviour:
   raycastRange: 5
   holdPoint: {fileID: 6562155952846226567}
   playerCamera: {fileID: 20437472682476688}
+  interactionText: {fileID: 0}
 --- !u!1 &4251870401101971297
 GameObject:
   m_ObjectHideFlags: 0

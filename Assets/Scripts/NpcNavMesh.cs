@@ -26,6 +26,14 @@ public class NpcVavMesh : MonoBehaviour
     public List<Transform> beklemeNoktalari; // 2 konum
 
     private static HashSet<int> doluKasaIndexleri = new HashSet<int>(); // hangi kasalar dolu
+   
+    public List<Transform> urunKoymaNoktalari; // Kasaya yerleþtirme pozisyonlarý
+    private List<GameObject> kasayaKonulanUrunler = new List<GameObject>();
+
+    private static Queue<NpcVavMesh> kasaSirasi = new Queue<NpcVavMesh>();
+    private int kendiKasaIndex = -1;
+
+    public bool Dolu = false;
 
     private void Start()
     {
@@ -42,6 +50,8 @@ public class NpcVavMesh : MonoBehaviour
         }
 
         animator = GetComponent<Animator>(); // Animator bileþenini al
+     
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -188,21 +198,19 @@ public class NpcVavMesh : MonoBehaviour
     private IEnumerator KasayaGitRutini()
     {
         // Boþ kasa var mý kontrol et
-        int bosKasaIndex = -1;
         for (int i = 0; i < kasaNoktalari.Count; i++)
         {
             if (!doluKasaIndexleri.Contains(i))
             {
-                bosKasaIndex = i;
+                kendiKasaIndex = i;
+                doluKasaIndexleri.Add(i);
                 break;
             }
         }
 
-        if (bosKasaIndex != -1)
+        if (kendiKasaIndex != -1)
         {
-            // Boþ kasa bulundu
-            doluKasaIndexleri.Add(bosKasaIndex);
-            Transform hedefKasa = kasaNoktalari[bosKasaIndex];
+            Transform hedefKasa = kasaNoktalari[kendiKasaIndex];
 
             agent.isStopped = false;
             agent.updateRotation = true;
@@ -217,14 +225,27 @@ public class NpcVavMesh : MonoBehaviour
 
             Debug.Log($"NPC kasaya ulaþtý: {hedefKasa.name}");
 
-            // Burada ödeme animasyonu vb. koyabilirsin
-            yield return new WaitForSeconds(5f); // örnek: 5 saniye ödeme süresi
+            // Kuyruða kendini ekle
+            kasaSirasi.Enqueue(this);
 
-            // Ödeme bitince kasayý boþalt
-            doluKasaIndexleri.Remove(bosKasaIndex);
-            Debug.Log($"{hedefKasa.name} artýk boþ.");
+            // Sýrasý gelene kadar bekle
+            yield return new WaitUntil(() => kasaSirasi.Peek() == this);
 
-            // NPC sahneden çýkabilir veya baþka iþlem yapabilir (isteðe baðlý)
+            // Sýrasý gelen kiþi ürünleri yerleþtirir
+            yield return StartCoroutine(UrunleriKasayaKoy());
+
+            if (Dolu)
+            {
+                // Ürünler yerleþtirildi, sýradan çýk
+                kasaSirasi.Dequeue();
+
+                // NPC çýkabilir, kasa boþalýr
+                doluKasaIndexleri.Remove(kendiKasaIndex);
+                Debug.Log($"{hedefKasa.name} artýk boþ.");
+
+                // NPC sahneyi terk edebilir veya çýkýþa gidebilir
+            }
+
         }
         else
         {
@@ -243,12 +264,12 @@ public class NpcVavMesh : MonoBehaviour
             agent.isStopped = false;
             agent.updateRotation = true;
             animator.SetFloat("Speed", 1f);
-            agent.speed = 2f;
+            agent.speed = 3.5f;
             agent.SetDestination(hedefNokta.position);
 
             yield return new WaitUntil(() => !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance);
             animator.SetFloat("Speed", 0f);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(5f);
 
             hedefIndex = (hedefIndex + 1) % beklemeNoktalari.Count;
 
@@ -261,6 +282,101 @@ public class NpcVavMesh : MonoBehaviour
             }
         }
     }
+
+    private IEnumerator UrunleriKasayaKoy()
+    {
+        int i = 0;
+        bool coffeIcinCiftAtla = true; // Ýlk sefer 2 atlayacak
+
+        List<Transform> urunler = new List<Transform>();
+        foreach (Transform child in Hand)
+        {
+            urunler.Add(child);
+        }
+
+        foreach (Transform urun in urunler)
+        {
+            if (i >= urunKoymaNoktalari.Count) break;
+
+            Transform nokta = urunKoymaNoktalari[i];
+            urun.SetParent(null);
+
+            // Pozisyonu ayarla (önce nokta pozisyonunu al, sonra y deðerini deðiþtireceðiz)
+            Vector3 hedefPozisyon = nokta.position;
+
+            // Varsayýlan olarak rotation'u kopyala
+            urun.rotation = nokta.rotation;
+
+            // TAG'a göre ROTASYON + Y pozisyonu AYARI
+            switch (urun.tag)
+            {
+                case "CableBox":
+                    urun.rotation *= Quaternion.Euler(0, 0, 0);
+                    hedefPozisyon.y += 0.675f;
+                    break;
+                case "HeadPhone":
+                    urun.rotation *= Quaternion.Euler(270, 0, 180);
+                    hedefPozisyon.y += 0.05f;
+                    break;
+                case "Speaker":
+                    urun.rotation *= Quaternion.Euler(270, 270, 0);
+                    hedefPozisyon.y += 0.07f;
+                    break;
+                case "MobilPhone":
+                    urun.rotation *= Quaternion.Euler(45, 270, 0);
+                    hedefPozisyon.y += 0.04f;
+                    break;
+                case "Gamepad":
+                    urun.rotation *= Quaternion.Euler(270, 270, 0);
+                    hedefPozisyon.y += 0.1f;
+                    break;
+                case "CoffeMachine":
+                    urun.rotation *= Quaternion.Euler(0, 270, 0);
+                    hedefPozisyon.y += 0.55f;
+                    break;
+                default:
+                    // Eðer tag tanýmsýzsa dokunma
+                    break;
+            }
+
+            // Ayarlanmýþ pozisyonu uygula
+            urun.position = hedefPozisyon;
+
+            // Listeye ekle
+            kasayaKonulanUrunler.Add(urun.gameObject);
+
+            // Ýndeks artýrma mantýðý
+            if (urun.tag == "CoffeMachine")
+            {
+                if (coffeIcinCiftAtla)
+                {
+                    i += 2;
+                }
+                else
+                {
+                    i += 1;
+                }
+
+                coffeIcinCiftAtla = !coffeIcinCiftAtla; // sýrayý deðiþtir
+            }
+            else
+            {
+                i += 1;
+            }
+
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        Debug.Log("NPC ürünleri kasaya koydu.");
+    }
+
+    public void SýraDoluMu()
+    {
+        Dolu = true;
+    }
+    
+     
+    
 }
 
 

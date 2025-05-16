@@ -18,6 +18,10 @@ TagManager:
   - Gamepad
   - ShelfPoint
   - NPC
+  - Checkout
+  - Open
+  - Close
+  - Trash
   layers:
   - Default
   - TransparentFX
@@ -35,8 +39,8 @@ TagManager:
   - mobilphoneLayer
   - gamepadLayer
   - coffemachineLayer
-  - 
-  - 
+  - kasaLayer
+  - playerBody
   - 
   - 
   - 

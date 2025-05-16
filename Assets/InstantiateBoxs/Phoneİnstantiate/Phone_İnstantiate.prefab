@@ -178,7 +178,6 @@ GameObject:
   - component: {fileID: 421593747400722985}
   - component: {fileID: 1608472731342138991}
   - component: {fileID: 3359203450476187864}
-  - component: {fileID: 6196696259961226373}
   m_Layer: 0
   m_Name: "Phone_\u0130nstantiate"
   m_TagString: Pickup
@@ -271,20 +270,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.356514, y: 1.7835075, z: 2.286356}
   m_Center: {x: -0.011692047, y: -0.01754123, z: -0.023387909}
---- !u!114 &6196696259961226373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3485469470477351447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcdcd89b18bbd33418ffc4707adc4569, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxContentsParent: {fileID: 2323568878986952580}
-  itemsInBox: []
 --- !u!1 &3610805107018748531
 GameObject:
   m_ObjectHideFlags: 0

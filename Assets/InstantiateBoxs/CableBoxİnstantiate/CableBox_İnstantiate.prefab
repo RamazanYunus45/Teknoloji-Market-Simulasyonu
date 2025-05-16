@@ -306,7 +306,6 @@ GameObject:
   - component: {fileID: 8195416093923170262}
   - component: {fileID: 3577426595116635217}
   - component: {fileID: 3064592130113980709}
-  - component: {fileID: 7630635096811772120}
   m_Layer: 0
   m_Name: "CableBox_\u0130nstantiate"
   m_TagString: Pickup
@@ -399,20 +398,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.3666306, y: 1.7845483, z: 2.2633586}
   m_Center: {x: -0.061779022, y: -0.012654066, z: 0.024847269}
---- !u!114 &7630635096811772120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3961954659181437814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcdcd89b18bbd33418ffc4707adc4569, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxContentsParent: {fileID: 2898930986725961298}
-  itemsInBox: []
 --- !u!1 &7917218729551468534
 GameObject:
   m_ObjectHideFlags: 0

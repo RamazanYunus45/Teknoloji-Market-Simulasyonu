@@ -178,7 +178,6 @@ GameObject:
   - component: {fileID: 7397363772910571836}
   - component: {fileID: 8508376146532438312}
   - component: {fileID: 7004961022521587}
-  - component: {fileID: -6156281011230530039}
   m_Layer: 0
   m_Name: "Powerbank_\u0130nstantiate"
   m_TagString: Pickup
@@ -271,20 +270,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.351982, y: 1.7499664, z: 2.2499437}
   m_Center: {x: -0.0025520325, y: -0.0127545595, z: -0.043365}
---- !u!114 &-6156281011230530039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3865698282236362638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcdcd89b18bbd33418ffc4707adc4569, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxContentsParent: {fileID: 4956204602740919029}
-  itemsInBox: []
 --- !u!1 &8258090945579549770
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,20 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class PickUpSystem : MonoBehaviour
 {
     public float raycastRange = 10.0f; // Raycast mesafesi
     public Transform holdPoint;
     public Camera playerCamera;
-    public TextMeshProUGUI interactionText; // UI Text için referans
-
+ 
     private GameObject pickedObject = null; // Þu anda tutulan kutu
     private Animation boxAnimation; // Kutunun Animation bileþeni
     private Vector3 originalScale; // Nesnenin orijinal ölçeði
     private List<GameObject> itemsInBox = new List<GameObject>(); // Kutunun içindeki nesneler
-
     private RaycastHit hit;
+
+    public Image MouseÝnteract;
+    public Image MouseÝnteract2;
+    public Image DropandOpenCloseandPlace;
+
+    private GameObject Trash;
+    private Outline TrashOutline;
+
+
+
+    private void Start()
+    {
+        Trash = GameObject.Find("Trash1");
+        TrashOutline = Trash.GetComponent<Outline>();
+        TrashOutline.enabled = false;
+
+        MouseÝnteract2.enabled = false;
+    }
 
     void Update()
     {
@@ -29,41 +46,73 @@ public class PickUpSystem : MonoBehaviour
                 // Pickup etiketi kontrolü
                 if (targetObject.CompareTag("Pickup"))
                 {
-                    interactionText.enabled = true; // Etkileþim mesajýný göster
-                    interactionText.text = "F: Nesneyi Al";
-
-                    if (Input.GetKeyDown(KeyCode.F))
+                    MouseÝnteract.enabled = true; // Etkileþim mesajýný göster
+                    if (Input.GetMouseButtonDown(0))
                     {
                         Debug.Log("F tuþuna basýldý. Bir nesne alýnmaya çalýþýlýyor.");
                         TryPickupObject(targetObject);
                     }
                 }
+                
                 else
                 {
-                    interactionText.enabled = false; // Mesajý gizle
+                    MouseÝnteract.enabled = false; // Mesajý gizle
                 }
             }
             else
             {
-                interactionText.enabled = false; // Raycast hiçbir þey bulamazsa mesajý gizle
+                MouseÝnteract.enabled = false; // Raycast hiçbir þey bulamazsa mesajý gizle
             }
         }
         else
         {
             // Kutuyu býrakma ve animasyon
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.G))
             {
                 Debug.Log("F tuþuna basýldý. Tutulan nesne býrakýlýyor.");
                 DropObject();
             }
 
-            if (Input.GetKeyDown(KeyCode.G))
+            if (Input.GetKeyDown(KeyCode.C))
             {
                 boxAnimation.Play();
             }
 
-            // Raflara nesne yerleþtirme
-            if (Input.GetKeyDown(KeyCode.K))
+            // Trash tag'li nesneye týklanýrsa kutuyu yok et
+            if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, raycastRange))
+            {
+                GameObject targetObject = hit.collider.transform.root.gameObject;
+                if (targetObject.CompareTag("Trash"))
+                {
+                    MouseÝnteract2.enabled = true;
+                    TrashOutline.enabled = true;
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        Debug.Log("Trash tag'li nesneye týklandý. Kutuyu yok et.");
+                        Destroy(pickedObject);
+                        pickedObject = null;
+                        itemsInBox.Clear();
+                        DropandOpenCloseandPlace.enabled = false;
+                        MouseÝnteract2.enabled = false;
+                        TrashOutline.enabled = false;
+                        return; // Bu frame'de baþka iþlem yapma
+                    }
+                }
+                else
+                {
+                    MouseÝnteract2.enabled = false;
+                    TrashOutline.enabled = false;
+                }
+            }
+            else
+            {
+                TrashOutline.enabled = false;
+                MouseÝnteract2.enabled = false;    
+            }
+
+
+                // Raflara nesne yerleþtirme
+                if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("K tuþuna basýldý. Raflara nesne yerleþtiriliyor.");
                 TryPlaceItemsOnShelf();
@@ -73,6 +122,9 @@ public class PickUpSystem : MonoBehaviour
 
     void TryPickupObject(GameObject targetObject)
     {
+        MouseÝnteract.enabled = false;
+        DropandOpenCloseandPlace.enabled = true;
+
         Debug.Log("Pickup etiketi olan bir nesne bulundu: " + targetObject.name);
 
         originalScale = targetObject.transform.localScale;
@@ -97,11 +149,13 @@ public class PickUpSystem : MonoBehaviour
 
         Physics.IgnoreCollision(pickedObject.GetComponent<Collider>(), GetComponent<Collider>());
         Debug.Log("Nesne alýndý ve holdPoint'e yerleþtirildi.");
-        interactionText.enabled = false;
+        
     }
 
     void DropObject()
     {
+        DropandOpenCloseandPlace.enabled = false;
+
         if (pickedObject != null)
         {
             Debug.Log("Nesne býrakýlýyor: " + pickedObject.name);

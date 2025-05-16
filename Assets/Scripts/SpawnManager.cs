@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 public class SpawnManager : MonoBehaviour
 {
     public Transform cartContainer; // View Layout Group'un Transform'u
@@ -20,6 +22,8 @@ public class SpawnManager : MonoBehaviour
 
     private Dictionary<string, GameObject> prefabDictionary;
 
+    private TextMeshProUGUI KalanText;
+
     private void Start()
     {
         Debug.Log("CartManager baþlatýldý. Prefab eþlemeleri yapýlýyor...");
@@ -36,6 +40,8 @@ public class SpawnManager : MonoBehaviour
         };
 
         Debug.Log($"Toplam {prefabDictionary.Count} prefab eþlemesi yapýldý.");
+
+        
     }
 
     public void SpawnCartItems()
@@ -71,29 +77,36 @@ public class SpawnManager : MonoBehaviour
 
     private void SpawnItems(string itemName, int count)
     {
-        Debug.Log($"SpawnItems fonksiyonu çaðrýldý. Ürün: {itemName}, Adet: {count}");
+        KalanText = GameObject.Find("Kalan_Text").GetComponent<TextMeshProUGUI>();
 
-        if (prefabDictionary.TryGetValue(itemName, out GameObject prefabToSpawn))
+        float Kalan = float.Parse(KalanText.text);
+        if(Kalan >= 0)
         {
-            Debug.Log($"Prefab bulundu: {itemName}. Spawn iþlemi baþlýyor...");
+            Debug.Log($"SpawnItems fonksiyonu çaðrýldý. Ürün: {itemName}, Adet: {count}");
 
-            for (int i = 0; i < count; i++)
+            if (prefabDictionary.TryGetValue(itemName, out GameObject prefabToSpawn))
             {
-                float zValue = Random.Range(0, 2) == 0 ? zPos : zPos2;
-                Vector3 spawnPosition = new Vector3(xPos, yPos, zValue);
-                Instantiate(prefabToSpawn, spawnPosition, prefabToSpawn.transform.rotation);
-                Debug.Log($"Prefab sahneye eklendi: {prefabToSpawn.name}");
-                Debug.Log($"Prefab spawn edildi: {itemName}, Pozisyon: {spawnPosition}");
+                Debug.Log($"Prefab bulundu: {itemName}. Spawn iþlemi baþlýyor...");
 
-                if (yPos < 7)
+                for (int i = 0; i < count; i++)
                 {
-                    yPos += 2.0f;
+                    float zValue = Random.Range(0, 2) == 0 ? zPos : zPos2;
+                    Vector3 spawnPosition = new Vector3(xPos, yPos, zValue);
+                    Instantiate(prefabToSpawn, spawnPosition, prefabToSpawn.transform.rotation);
+                    Debug.Log($"Prefab sahneye eklendi: {prefabToSpawn.name}");
+                    Debug.Log($"Prefab spawn edildi: {itemName}, Pozisyon: {spawnPosition}");
+
+                    if (yPos < 7)
+                    {
+                        yPos += 2.0f;
+                    }
                 }
             }
-        }
-        else
-        {
-            Debug.LogError($"Prefab bulunamadý: {itemName}");
+            else
+            {
+                Debug.LogError($"Prefab bulunamadý: {itemName}");
+            }
         }
     }
+       
 }

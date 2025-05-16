@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class ZoomScript : MonoBehaviour
 {
@@ -8,7 +10,7 @@ public class ZoomScript : MonoBehaviour
     public Camera computerCamera; // Bilgisayar ekraný için özel kamera
 
     public float zoomSpeed = 5f; // Yakýnlaþtýrma hýzý
-    public KeyCode interactionKey = KeyCode.E; // Etkileþim tuþu
+   // public KeyCode interactionKey = KeyCode.E; // Etkileþim tuþu
     public KeyCode exitKey = KeyCode.Escape; // Çýkýþ tuþu
    
 
@@ -24,6 +26,9 @@ public class ZoomScript : MonoBehaviour
     public float interactionDistance = 8f; // Etkileþim mesafesi
 
     private Outline computerOutline; // Bilgisayarýn outline bileþeni
+
+    public Image MouseÝnteract;
+    public Image EscBack;
 
     void Start()
     {
@@ -47,12 +52,14 @@ public class ZoomScript : MonoBehaviour
         {
             computerOutline.enabled = false;
         }
+
+        EscBack.enabled = false;
     }
 
     void Update()
     {
         // Bilgisayar nesnesine olan mesafeyi kontrol et
-        if (!isInFocusMode && IsCrosshairOnComputer() && Input.GetKeyDown(interactionKey))
+        if (!isInFocusMode && IsCrosshairOnComputer() && Input.GetMouseButtonDown(0))
         {
             Debug.Log("E tuþuna basýldý ve bilgisayarýn yakýnýndasýnýz! Fokus moduna giriliyor.");
             EnterFocusMode();
@@ -63,6 +70,7 @@ public class ZoomScript : MonoBehaviour
         {
             Debug.Log("Escape tuþuna basýldý! Fokus modundan çýkýlýyor.");
             ExitFocusMode();
+            
         }
 
         
@@ -89,6 +97,7 @@ public class ZoomScript : MonoBehaviour
                     if (computerOutline != null)
                     {
                         computerOutline.enabled = true;  // Outline aktif
+                        MouseÝnteract.enabled = true;
                     }
                     return true;
                 }
@@ -99,6 +108,7 @@ public class ZoomScript : MonoBehaviour
         if (computerOutline != null)
         {
             computerOutline.enabled = false; // Outline'ý kapat
+            MouseÝnteract.enabled = false;
         }
 
         return false;
@@ -106,6 +116,9 @@ public class ZoomScript : MonoBehaviour
 
     private void EnterFocusMode()
     {
+        MouseÝnteract.enabled = false;
+        EscBack.enabled = true;
+
         // Fokus moduna geçiþ
         isInFocusMode = true;
 
@@ -147,6 +160,12 @@ public class ZoomScript : MonoBehaviour
 
     private void ExitFocusMode()
     {
+        // Mouse imlecini gizle ve fareyi kilitle
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        EscBack.enabled = false;
+
         // Fokus modundan çýkýþ
         isInFocusMode = false;
 
@@ -157,9 +176,7 @@ public class ZoomScript : MonoBehaviour
         // Oyuncu hareketini tekrar etkinleþtir
         playerController.enabled = true;
 
-        // Mouse imlecini gizle ve fareyi kilitle
-        Cursor.lockState = wasCursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
-        Cursor.visible = false;
+        
 
         // Mouse kontrolünü yeniden etkinleþtir
         mouseLook.enabled = true;
@@ -167,6 +184,8 @@ public class ZoomScript : MonoBehaviour
         // Kameralar arasýnda geçiþ yap
         playerCamera.enabled = true;
         computerCamera.enabled = false;
+
+       
 
         Debug.Log("Focus modundan çýkýldý ve kamera eski pozisyona döndürüldü.");
     }
