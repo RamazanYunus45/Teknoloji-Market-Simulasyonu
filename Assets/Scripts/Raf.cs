@@ -127,7 +127,7 @@ public class Raf : MonoBehaviour
         }
 
         // Diðer raflar bitti  ne kadar toplayabildiysek onu döndür
-        Debug.LogWarning($"[YeterliUrunBul] Tüm raflardan toplanan ürün adedi yeterli deðil. Ne bulduysak alýyoruz.");
+        Debug.Log($"[YeterliUrunBul] Tüm raflardan toplanan ürün adedi yeterli deðil. Ne bulduysak alýyoruz.");
 
         // Ýlk raftan da ürün aldýysak onlarý da ekle
         rafKonum.AddRange(ilkRafKonumlar);

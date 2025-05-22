@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 166805364822766636}
   - component: {fileID: 4001754176516253753}
   - component: {fileID: 3430922441016526467}
+  - component: {fileID: 8594011221721203679}
+  - component: {fileID: 7785687434271038674}
   m_Layer: 0
   m_Name: Speaker
   m_TagString: Speaker
@@ -83,3 +85,38 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8594011221721203679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6792463211120410800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca98b5981bef52408a0932bd346cc27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  urunAdi: Speaker
+  fiyat: 20
+--- !u!65 &7785687434271038674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6792463211120410800}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01918397, y: 0.016450299, z: 0.03515977}
+  m_Center: {x: -2.0003988e-16, y: 0.0017748533, z: 0.016774539}

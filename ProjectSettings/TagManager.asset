@@ -22,6 +22,9 @@ TagManager:
   - Open
   - Close
   - Trash
+  - CheckoutCamera
+  - Money
+  - MoneyValue
   layers:
   - Default
   - TransparentFX

@@ -7,7 +7,7 @@ public class CheckOutZoom : MonoBehaviour
 {
     public Camera playerCamera;
     public Camera checkoutCamera;
-    public float interactDistance = 3f;    
+    public float interactDistance = 5f;    
     public KeyCode exitKey = KeyCode.Escape;
 
     private bool isInCheckoutMode = false;
@@ -19,6 +19,8 @@ public class CheckOutZoom : MonoBehaviour
 
     private GameObject Cashier;
     private Outline CashierOutline;
+
+    private Collider[] cashierColliders;
 
     void Start()
     {
@@ -32,6 +34,8 @@ public class CheckOutZoom : MonoBehaviour
 
         // Checkout kamerasýný baþta kapatalým
         checkoutCamera.enabled = false;
+
+        cashierColliders = Cashier.GetComponentsInChildren<Collider>();
     }
 
     void Update()
@@ -83,7 +87,12 @@ public class CheckOutZoom : MonoBehaviour
         playerController.enabled = false;
         StopMovement();
 
-       checkoutLook.enabled = true;
+        checkoutLook.enabled = true;
+
+        foreach (var col in cashierColliders)
+        {
+            col.enabled = false;
+        }
     }
 
     void ExitCheckoutMode()
@@ -103,6 +112,11 @@ public class CheckOutZoom : MonoBehaviour
         // Mouse imlecini kilitle
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        foreach (var col in cashierColliders)
+        {
+            col.enabled = true;
+        }      
     }
 
     private void StopMovement()

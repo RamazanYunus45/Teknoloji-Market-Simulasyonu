@@ -92,6 +92,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2553542897174761386}
+  - component: {fileID: 3585165732315973758}
+  - component: {fileID: 6809090587509338067}
   m_Layer: 0
   m_Name: Mobile Phone
   m_TagString: MobilPhone
@@ -123,6 +125,41 @@ Transform:
   - {fileID: 5175324135338492713}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 45, y: -90, z: 0}
+--- !u!114 &3585165732315973758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122324742504139281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca98b5981bef52408a0932bd346cc27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  urunAdi: Telefon
+  fiyat: 100
+--- !u!65 &6809090587509338067
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122324742504139281}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.33749378, y: 0.47915578, z: 0.48024964}
+  m_Center: {x: -0.0010994822, y: 0.43777087, z: -0.00036758097}
 --- !u!1 &5543628632872925281
 GameObject:
   m_ObjectHideFlags: 0

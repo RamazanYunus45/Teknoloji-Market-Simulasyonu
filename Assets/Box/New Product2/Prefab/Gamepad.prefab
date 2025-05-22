@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5284148733778211886}
   - component: {fileID: 5249796946615015333}
   - component: {fileID: 4671901869699907215}
+  - component: {fileID: 8011477087261656592}
+  - component: {fileID: 8083692822864216203}
   m_Layer: 0
   m_Name: Gamepad
   m_TagString: Gamepad
@@ -83,3 +85,38 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8011477087261656592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7390104916420114925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca98b5981bef52408a0932bd346cc27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  urunAdi: Gamepad
+  fiyat: 35
+--- !u!65 &8083692822864216203
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7390104916420114925}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0086265225, y: 0.016282957, z: 0.016227169}
+  m_Center: {x: -0.0005092985, y: -4.656614e-10, z: 0.006837757}
