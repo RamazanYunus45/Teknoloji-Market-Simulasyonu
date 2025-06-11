@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RafSecici : MonoBehaviour
 {
-
     /* Raf olan konumlarý buluyor ürün olan raflarý ayrý tüm raf konumalrýný ayrý olarak buluyor ve rastgele konum döndürüyor */
 
     private Transform[] uygunKonumlar; // Ürün olan raflarýn konumlarý
@@ -54,7 +53,6 @@ public class RafSecici : MonoBehaviour
             Debug.LogWarning("Hiçbir ShelfPoint bulunamadý!");
             return null;
         }
-
         if (kaynak.Length == 1)
         {
             return kaynak[0];

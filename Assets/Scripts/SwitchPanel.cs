@@ -21,8 +21,7 @@ public class SwitchPanel : MonoBehaviour
     }
 
     public void SwitchToPanel3()
-    {
-        
+    {       
         panel3.SetActive(true);  
     }
 

@@ -39,9 +39,7 @@ public class SpawnManager : MonoBehaviour
             { "Hoparlör", prefab6 }
         };
 
-        Debug.Log($"Toplam {prefabDictionary.Count} prefab eþlemesi yapýldý.");
-
-        
+        Debug.Log($"Toplam {prefabDictionary.Count} prefab eþlemesi yapýldý.");        
     }
 
     public void SpawnCartItems()

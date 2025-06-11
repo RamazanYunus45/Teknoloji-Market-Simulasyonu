@@ -26,7 +26,6 @@ public class SepetManager : MonoBehaviour
 
     public void AddToCart()
     {
-
         int urunFiyat = int.Parse(fiyatText.text);
         int urunAdet = int.Parse(adetText.text);
         int urunToplamFiyat = urunAdet * urunFiyat;
@@ -46,10 +45,6 @@ public class SepetManager : MonoBehaviour
         KalanText.text = YeniBakiye.ToString();
         adetText.text = "1";
     }
-
-
-
-
 
     // Sepete ürün ekleme fonksiyonu
     public void SepeteUrunEkle()
@@ -100,7 +95,6 @@ public class SepetManager : MonoBehaviour
                         textComp.text = yeniToplamFiyat.ToString("F2");
                     }
                 }
-
                 break;
             }
         }
@@ -151,10 +145,7 @@ public class SepetManager : MonoBehaviour
 
             MevcutBakiyeText.text = newBakiye.ToString();
             KalanText.text = (newBakiye - ToplamFiyat).ToString();
-        }
-      
-        
+        }             
     }
-
 }
 

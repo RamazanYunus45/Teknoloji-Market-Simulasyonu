@@ -23,7 +23,6 @@ public class UrunBilgi : MonoBehaviour
     {
         if (isScanned) return; 
         isScanned = true;
-
         
         Debug.Log("Okutulan ürün: " + urunAdi + " - " + fiyat + "");
 

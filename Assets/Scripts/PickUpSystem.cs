@@ -9,7 +9,7 @@ public class PickUpSystem : MonoBehaviour
     public float raycastRange = 10.0f; // Raycast mesafesi
     public Transform holdPoint;
     public Camera playerCamera;
- 
+
     private GameObject pickedObject = null; // Þu anda tutulan kutu
     private Animation boxAnimation; // Kutunun Animation bileþeni
     private Vector3 originalScale; // Nesnenin orijinal ölçeði
@@ -30,7 +30,6 @@ public class PickUpSystem : MonoBehaviour
         Trash = GameObject.Find("Trash1");
         TrashOutline = Trash.GetComponent<Outline>();
         TrashOutline.enabled = false;
-
         MouseÝnteract2.enabled = false;
     }
 
@@ -53,7 +52,6 @@ public class PickUpSystem : MonoBehaviour
                         TryPickupObject(targetObject);
                     }
                 }
-                
                 else
                 {
                     MouseÝnteract.enabled = false; // Mesajý gizle
@@ -72,12 +70,10 @@ public class PickUpSystem : MonoBehaviour
                 Debug.Log("F tuþuna basýldý. Tutulan nesne býrakýlýyor.");
                 DropObject();
             }
-
             if (Input.GetKeyDown(KeyCode.C))
             {
                 boxAnimation.Play();
             }
-
             // Trash tag'li nesneye týklanýrsa kutuyu yok et
             if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, raycastRange))
             {
@@ -107,12 +103,10 @@ public class PickUpSystem : MonoBehaviour
             else
             {
                 TrashOutline.enabled = false;
-                MouseÝnteract2.enabled = false;    
+                MouseÝnteract2.enabled = false;
             }
-
-
-                // Raflara nesne yerleþtirme
-                if (Input.GetMouseButtonDown(0))
+            // Raflara nesne yerleþtirme
+            if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("K tuþuna basýldý. Raflara nesne yerleþtiriliyor.");
                 TryPlaceItemsOnShelf();
@@ -146,10 +140,8 @@ public class PickUpSystem : MonoBehaviour
                 itemsInBox.Add(child.gameObject); // Yeni kutunun içeriðini listeye ekle
             }
         }
-
         Physics.IgnoreCollision(pickedObject.GetComponent<Collider>(), GetComponent<Collider>());
         Debug.Log("Nesne alýndý ve holdPoint'e yerleþtirildi.");
-        
     }
 
     void DropObject()
@@ -233,7 +225,6 @@ public class PickUpSystem : MonoBehaviour
                         Debug.Log("Diðer layer dolu. Ürün yerleþtirilemez.");
                         return;
                     }
-
                     foreach (Transform slot in hitObject.transform)
                     {
                         if (slot.childCount == 0)
@@ -242,7 +233,6 @@ public class PickUpSystem : MonoBehaviour
                             return;
                         }
                     }
-
                     Debug.Log($"Rafta uygun boþ slot bulunamadý. Layer: {LayerMask.LayerToName(layerToCheck)}");
                 }
             }
@@ -287,7 +277,6 @@ public class PickUpSystem : MonoBehaviour
                 }
             }
         }
-
         Debug.Log("Diðer layer'larda boþ slot bulundu.");
         return false;
     }
@@ -308,4 +297,4 @@ public class PickUpSystem : MonoBehaviour
     }
 }
 
-    
+

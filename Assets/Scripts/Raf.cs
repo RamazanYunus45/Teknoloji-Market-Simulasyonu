@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Raf : MonoBehaviour
 {
-
-
-
     /* Raftaki ürün bilgilerinin alýyor adet ve çeþit olarak , rastgele ürün ve adet seçiyor ,
      yeterli ürün yoksa diðer raflarý kontrol edip yeterli ürün olan rafýn konumunu döndürüyor */
 

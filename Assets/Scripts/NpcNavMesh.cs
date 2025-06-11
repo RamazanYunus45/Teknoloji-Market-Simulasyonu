@@ -10,10 +10,7 @@ using System;
 
 public class NpcNavMesh : MonoBehaviour
 {
-
     /* Npc bir raf collider ý ile çakýþtýysa iþleme baþlýyor , ürün almaya baþlýyor raftan tek tek ürünleri topluyor */
-
-
     private Dictionary<string, int> npcUrunBilgileri = new Dictionary<string, int>();
     public Transform Hand;
     private NavMeshAgent agent;
@@ -56,7 +53,7 @@ public class NpcNavMesh : MonoBehaviour
     private Animation animasyon;
 
     public Transform[] cikisNoktalari;
-
+    
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -72,17 +69,14 @@ public class NpcNavMesh : MonoBehaviour
         }
 
         animator = GetComponent<Animator>(); // Animator bileþenini al
-
-         CheckoutCam = GameObject.Find("KasaCamera").GetComponent<Camera>();
-
+        CheckoutCam = GameObject.Find("KasaCamera").GetComponent<Camera>();
         Receýved_Text = GameObject.Find("Receýved_Text").GetComponent<TextMeshProUGUI>();
         Total_Text = GameObject.Find("Total_Text").GetComponent<TextMeshProUGUI>();
         Change_Text = GameObject.Find("Change_Text").GetComponent<TextMeshProUGUI>();
         Gýve_Text = GameObject.Find("Gýve_Text").GetComponent<TextMeshProUGUI>();
         BakiyeText = GameObject.Find("Bakiye_Text").GetComponent<TextMeshProUGUI>();
         NpcCollider = GetComponent<Collider>();
-
-        animasyon = GameObject.Find("Çekmece").GetComponent<Animation>();
+        animasyon = GameObject.Find("Çekmece").GetComponent<Animation>();      
     }
 
     private void OnTriggerEnter(Collider other)
@@ -224,13 +218,12 @@ public class NpcNavMesh : MonoBehaviour
        
         callback?.Invoke(alinanAdet);
 
-      //  StartCoroutine(KasayaGitRutini());
+      
     }
 
 
     private IEnumerator KasayaGitRutini()
     {
-        // Boþ kasa var mý kontrol et
         for (int i = 0; i < kasaNoktalari.Count; i++)
         {
             if (!doluKasaIndexleri.Contains(i))
@@ -252,22 +245,21 @@ public class NpcNavMesh : MonoBehaviour
             agent.SetDestination(hedefKasa.position);
 
             yield return new WaitUntil(() => !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance);
-            animator.SetFloat("Speed", 0f);
-            agent.speed = 0f;
-            agent.updateRotation = false;
-            
-            Debug.Log($"NPC kasaya ulaþtý: {hedefKasa.name}");
 
-            // Kuyruða kendini ekle
+            // Durma iþlemleri
+            agent.speed = 0f;
+            agent.isStopped = true;
+            agent.updateRotation = false;
+            animator.SetFloat("Speed", 0f);
+
+            // Kuyruða ekle
             kasaSirasi.Enqueue(this);
 
-            yield return new WaitUntil(() => kasaSirasi.Peek() == this);
+            // Sýrasý gelene kadar bekle
+            yield return new WaitUntil(() => kasaSirasi.Count > 0 && kasaSirasi.Peek() == this);
 
-            // Sýrasý gelen kiþi ürünleri yerleþtirir
+            // Ürünleri koy
             yield return StartCoroutine(UrunleriKasayaKoy());
-            
-           
-
         }
         else
         {
@@ -290,12 +282,15 @@ public class NpcNavMesh : MonoBehaviour
             agent.SetDestination(hedefNokta.position);
 
             yield return new WaitUntil(() => !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance);
+
+            agent.speed = 0f;
+            agent.isStopped = true;
             animator.SetFloat("Speed", 0f);
+
             yield return new WaitForSeconds(5f);
 
             hedefIndex = (hedefIndex + 1) % beklemeNoktalari.Count;
 
-            // Her döngüde kasalar boþaldý mý kontrol edelim
             if (doluKasaIndexleri.Count < kasaNoktalari.Count)
             {
                 Debug.Log("Kasada yer açýldý, tekrar deniyorum.");
@@ -306,7 +301,7 @@ public class NpcNavMesh : MonoBehaviour
     }
 
     public IEnumerator UrunleriKasayaKoy()
-    {
+    {      
         transform.rotation = Quaternion.Euler(0, 180, 0);
 
         int i = 0;
@@ -410,12 +405,6 @@ public class NpcNavMesh : MonoBehaviour
         urunSecildi = false;
     }
   
-
-    //public void SýraDoluMu()
-   // {
-    //    Dolu = true;
-    //}
-
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -424,10 +413,7 @@ public class NpcNavMesh : MonoBehaviour
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit))
-            {
-                
-                   
-                
+            {                                                 
                 if (hit.collider.CompareTag("Money")) // NPC para verir
                 {
                     MoneyVerildi(hit);
@@ -442,42 +428,47 @@ public class NpcNavMesh : MonoBehaviour
 
         if (paraUstuDogru && Input.GetKeyDown(KeyCode.Space))
         {
+            if (kasaSirasi.Count > 0 && kasaSirasi.Peek() == this)
+            {
+                kasaSirasi.Dequeue();
+            }
+
+            if (kendiKasaIndex != -1 && doluKasaIndexleri.Contains(kendiKasaIndex))
+            {
+                doluKasaIndexleri.Remove(kendiKasaIndex);
+            }
+
+            // Delay'li güncelleme
+            StartCoroutine(KasayiGuncelleGecikmeli());
+
+            // Para iþlemleri
             float bakiye = float.Parse(BakiyeText.text);
             float toplam = bakiye + toplamFiyat;
             BakiyeText.text = toplam.ToString();
-            Debug.LogWarning("Ýþlem tamamlandý. NPC çýkabilir.");
+
             Dolu = true;
             NpcCikisiniBaslat();
-           
-            kasaSirasi.Dequeue();
-            doluKasaIndexleri.Remove(kendiKasaIndex);
-            kendiKasaIndex = -1;
-            if (kasaSirasi.Count > 0)
-            {
-                NpcNavMesh siradaki = kasaSirasi.Peek();
-                siradaki.StartCoroutine(siradaki.KasayaGitRutini());
-            }
+
             animasyon.Play("MoneyClose");
-            Receýved_Text.text = 0.ToString();
-            Total_Text.text = 0.ToString();
-            Change_Text.text = 0.ToString();
-            Gýve_Text.text = 0.ToString();
-            verilenPara = 0;         
+            Receýved_Text.text = "0";
+            Total_Text.text = "0";
+            Change_Text.text = "0";
+            Gýve_Text.text = "0";
+
+            verilenPara = 0;
             toplamFiyat = 0;
             scanCount = 0;
             npcPara = 0;
             MoneyBasýldý = false;
             paraUstuDogru = false;
+
             MoneyStack.SetActive(false);
             kasayaKonulanUrunler.Clear();
-           
-            // NPC çýkýþ iþlemleri vs...
         }
     }
 
     public void ScanUrun(RaycastHit hit)
-    {
-       
+    {    
         UrunBilgi urun = hit.collider.GetComponent<UrunBilgi>();
         if (urun != null)
         {
@@ -504,6 +495,7 @@ public class NpcNavMesh : MonoBehaviour
         {
             HesaplaNpcPara();
             MoneyStack.SetActive(false);
+           
             animator.SetTrigger("ÝdleGec");
             NpcCollider.enabled = true;
             animasyon.Play("MoneyOpen");
@@ -513,17 +505,12 @@ public class NpcNavMesh : MonoBehaviour
 
     public void HesaplaNpcPara()
     {
-
         int ekstraPara = UnityEngine.Random.Range(1, 51);
         npcPara = toplamFiyat + ekstraPara;
 
         Receýved_Text.text = npcPara.ToString();
         Total_Text.text = toplamFiyat.ToString();
-        Change_Text.text = (npcPara - toplamFiyat).ToString();
-        
-
-
-
+        Change_Text.text = (npcPara - toplamFiyat).ToString();       
     }
 
     public void ParaUstuIslemi(RaycastHit hit)
@@ -568,8 +555,45 @@ public class NpcNavMesh : MonoBehaviour
 
     }
 
-    
+    private void KasadakiNPCleriGuncelle()
+    {
+        int index = 0;
 
+        foreach (var npc in kasaSirasi)
+        {
+            if (npc == null) continue;
+
+            Vector3 hedefPozisyon = kasaNoktalari[index].position;
+
+            npc.agent.isStopped = false;
+            npc.agent.updateRotation = true;
+            npc.agent.speed = 3.5f;
+            npc.animator.SetFloat("Speed", 1f);
+            npc.agent.SetDestination(hedefPozisyon);
+
+            npc.kendiKasaIndex = index;
+
+            npc.StartCoroutine(npc.KasayaYerlestiktenSonraDur());
+
+            index++;
+            if (index >= kasaNoktalari.Count)
+                break;
+        }
+    }
+    public IEnumerator KasayaYerlestiktenSonraDur()
+    {
+        yield return new WaitUntil(() => !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance);
+
+        agent.speed = 0f;
+        agent.isStopped = true;
+        agent.updateRotation = false;
+        animator.SetFloat("Speed", 0f);
+    }
+    private IEnumerator KasayiGuncelleGecikmeli()
+    {
+        yield return new WaitForSeconds(0.2f); // kýsa bir gecikme
+        KasadakiNPCleriGuncelle();
+    }
 }
 
 

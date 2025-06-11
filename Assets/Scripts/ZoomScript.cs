@@ -10,9 +10,9 @@ public class ZoomScript : MonoBehaviour
     public Camera computerCamera; // Bilgisayar ekraný için özel kamera
 
     public float zoomSpeed = 5f; // Yakýnlaþtýrma hýzý
-   // public KeyCode interactionKey = KeyCode.E; // Etkileþim tuþu
+                                 // public KeyCode interactionKey = KeyCode.E; // Etkileþim tuþu
     public KeyCode exitKey = KeyCode.Escape; // Çýkýþ tuþu
-   
+
 
     private bool isInFocusMode = false;
     private Vector3 originalCameraPosition; // Kameranýn orijinal pozisyonu
@@ -32,27 +32,16 @@ public class ZoomScript : MonoBehaviour
 
     void Start()
     {
-        // Oyuncu hareket kontrolünü al
         playerController = FindObjectOfType<FirstPersonMovement>();
-
-        // Mouse hareket kontrolünü al
         mouseLook = playerCamera.GetComponent<FirstPersonLook>();
-
-        // Bilgisayar kamerasýný baþta devre dýþý býrak
         computerCamera.enabled = false;
-
-        // Bilgisayar nesnesini bul
         computer = GameObject.Find("Computer");
-
-        // Bilgisayar nesnesindeki Outline bileþenini al
         computerOutline = computer.GetComponent<Outline>();
 
-        // Baþlangýçta outline'ý kapalý yap
         if (computerOutline != null)
         {
             computerOutline.enabled = false;
         }
-
         EscBack.enabled = false;
     }
 
@@ -64,19 +53,13 @@ public class ZoomScript : MonoBehaviour
             Debug.Log("E tuþuna basýldý ve bilgisayarýn yakýnýndasýnýz! Fokus moduna giriliyor.");
             EnterFocusMode();
         }
-
         // Çýkýþ tuþuna basýlýnca normal moda dön
         if (isInFocusMode && Input.GetKeyDown(exitKey))
         {
             Debug.Log("Escape tuþuna basýldý! Fokus modundan çýkýlýyor.");
             ExitFocusMode();
-            
         }
-
-        
     }
-
-    
 
     private bool IsCrosshairOnComputer()
     {
@@ -103,14 +86,12 @@ public class ZoomScript : MonoBehaviour
                 }
             }
         }
-
         // Mesafe uygun deðilse outline'ý kapat
         if (computerOutline != null)
         {
             computerOutline.enabled = false; // Outline'ý kapat
             MouseÝnteract.enabled = false;
         }
-
         return false;
     }
 
@@ -176,8 +157,6 @@ public class ZoomScript : MonoBehaviour
         // Oyuncu hareketini tekrar etkinleþtir
         playerController.enabled = true;
 
-        
-
         // Mouse kontrolünü yeniden etkinleþtir
         mouseLook.enabled = true;
 
@@ -185,12 +164,6 @@ public class ZoomScript : MonoBehaviour
         playerCamera.enabled = true;
         computerCamera.enabled = false;
 
-       
-
         Debug.Log("Focus modundan çýkýldý ve kamera eski pozisyona döndürüldü.");
     }
-
-
-   
-
 }

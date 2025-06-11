@@ -19,7 +19,6 @@ public class OpenClose : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
         RaycastHit hit;
 
@@ -34,8 +33,6 @@ public class OpenClose : MonoBehaviour
                     SpawnetmeDurumu = true;
                 }
             }
-
-
             if (hit.collider.CompareTag("Open"))
             {
                 Mouse›nteract.enabled = true;
@@ -44,16 +41,12 @@ public class OpenClose : MonoBehaviour
                     anim.Play("Close");
                     SpawnetmeDurumu = false;
                 }
-
             }     
-
         }
-
         else
         {
             Mouse›nteract.enabled = false;
         }
-
     }
 }
     
